@@ -85,6 +85,7 @@ jupyter-notebook/
 keynote/
 outputs/
 output/
+graphify-out/
 ref/
 processed/
 *.nc
