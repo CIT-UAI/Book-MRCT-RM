@@ -16,6 +16,9 @@ html-math-method: katex
 
 Este documento organiza la redacción de un libro digital técnico sobre la Matriz de Resiliencia Climática Territorial (MRCT).
 
+Este libro digital se trabajará en la Región Metropolitana de Santiago, Chile, considerando sus condiciones territoriales, ambientales e hidrográficas como marco principal para la aplicación de la MRCT.
+
+![Región Metropolitana de Santiago como área de estudio del libro digital MRCT.](images/Mapa-cuencas-RM.jpeg){#fig-rm-estudio width="80%"}
 
 El libro debe leerse como una secuencia lógica. Primero se presenta la región de estudio y las unidades de análisis. Luego se describen los insumos satelitales y se derivan los indicadores base. Después se construye el estado ecosistémico, se mide su trayectoria, se incorpora el espacio, se estima la sensibilidad y se sintetiza la resiliencia territorial.
 
