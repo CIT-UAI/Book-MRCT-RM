@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Guía Técnica MRCT",
+    "title": "Guía Técnica MRCT - Región Metropolintana",
     "section": "",
     "text": "Prefacio",
     "crumbs": [
@@ -12,9 +12,9 @@
   {
     "objectID": "index.html#propósito",
     "href": "index.html#propósito",
-    "title": "Guía Técnica MRCT",
+    "title": "Guía Técnica MRCT - Región Metropolintana",
     "section": "Propósito",
-    "text": "Propósito\nEste documento organiza la redacción de un libro digital técnico sobre la Matriz de Resiliencia Climática Territorial (MRCT).\nEl libro debe leerse como una secuencia lógica. Primero se presenta la región de estudio y las unidades de análisis. Luego se describen los insumos satelitales y se derivan los indicadores base. Después se construye el estado ecosistémico, se mide su trayectoria, se incorpora el espacio, se estima la sensibilidad y se sintetiza la resiliencia territorial.",
+    "text": "Propósito\nEste documento organiza la redacción de un libro digital técnico sobre la Matriz de Resiliencia Climática Territorial (MRCT).\nEste libro digital se trabajará en la Región Metropolitana de Santiago, Chile, considerando sus condiciones territoriales, ambientales e hidrográficas como marco principal para la aplicación de la MRCT.\n\n\n\n\n\n\nFigure 1: Región Metropolitana de Santiago como área de estudio del libro digital MRCT.\n\n\n\nEl libro debe leerse como una secuencia lógica. Primero se presenta la región de estudio y las unidades de análisis. Luego se describen los insumos satelitales y se derivan los indicadores base. Después se construye el estado ecosistémico, se mide su trayectoria, se incorpora el espacio, se estima la sensibilidad y se sintetiza la resiliencia territorial.",
     "crumbs": [
       "Prefacio"
     ]
@@ -22,7 +22,7 @@
   {
     "objectID": "index.html#estructura-general-del-libro",
     "href": "index.html#estructura-general-del-libro",
-    "title": "Guía Técnica MRCT",
+    "title": "Guía Técnica MRCT - Región Metropolintana",
     "section": "Estructura general del libro",
     "text": "Estructura general del libro\n\nIntroducción\nRegión de estudio y unidades de análisis\nInsumos satelitales e índices espectrales\nIndicadores base\nVector de estado ecosistémico y línea base\nTrayectoria del estado sistémico\nIntegración espacial\nSensibilidad del sistema\nSíntesis de resiliencia territorial\nConclusiones",
     "crumbs": [
@@ -32,7 +32,7 @@
   {
     "objectID": "index.html#flujo-general-del-modelo",
     "href": "index.html#flujo-general-del-modelo",
-    "title": "Guía Técnica MRCT",
+    "title": "Guía Técnica MRCT - Región Metropolintana",
     "section": "Flujo general del modelo",
     "text": "Flujo general del modelo",
     "crumbs": [
