@@ -30,7 +30,7 @@ La @tbl-bandas-landsat8 resume las bandas de Landsat 8 y su función dentro del 
 
 : Bandas espectrales de Landsat 8 OLI/TIRS y uso dentro del flujo MRCT. Las bandas térmicas tienen resolución nativa de 100 m y se distribuyen remuestreadas a 30 m en los productos Landsat. {#tbl-bandas-landsat8}
 
-El modelo cubre el período **2013–2025**, con un mosaico por año. La cobertura territorial corresponde a las cuencas hidrográficas de la Región de Magallanes y de la Antártica Chilena, un territorio con alta variabilidad ecosistémica y sensibilidad a los efectos del cambio climático sobre hielo, vegetación y régimen hídrico.
+El modelo cubre el período **2013–2025**, con un mosaico por año. La cobertura territorial corresponde a las cuencas hidrográficas de la Región Metropolitana de Santiago, un territorio mediterráneo donde la alta cordillera, la cuenca urbana, los valles agrícolas, el bosque esclerófilo, los humedales y la presión antrópica generan fuertes contrastes en vegetación, nieve, agua superficial, aridez y temperatura.
 
 La frecuencia de revisita de Landsat 8 es de 16 días. Los mosaicos anuales se construyen como composites de mediana temporal: para cada píxel se toma la mediana de todos los valores observados durante el año. Esto reduce el efecto de perturbaciones puntuales como nubes o sombras residuales y entrega una representación estable del estado superficial anual.
 

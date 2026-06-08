@@ -3,7 +3,7 @@ title: "Integración y Validación"
 subtitle: "Comparación entre señal analítica y evidencia de terreno"
 ---
 
-Este capítulo define cómo integrar la evidencia de terreno con la MRCT. Su función es cerrar el ciclo entre priorización, observación y aprendizaje metodológico: la selección nace en @sec-diez-cuencas-jerk y @sec-terminales-h2-jerk, la campaña se organiza en @sec-decision-cuencas-finales, el registro se levanta con @sec-ficha-tipo-cuenca y los resultados se consolidan en @sec-resultados-por-cuenca-terreno.
+Este capítulo define cómo integrar la evidencia de terreno con la MRCT. Su función es cerrar el ciclo entre priorización, observación y aprendizaje metodológico: la selección nace en @sec-diez-cuencas-jerk y @sec-puntos-estrategicos-rms, la campaña se organiza en @sec-decision-cuencas-finales, el registro se levanta con @sec-ficha-tipo-cuenca y los resultados se consolidan en @sec-resultados-por-cuenca-terreno.
 
 ::: {.callout-note}
 ## Objetivo

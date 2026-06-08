@@ -17,7 +17,7 @@ book:
       affiliation: Centro de Inteligencia Territorial
       affiliation-url: https://cit.uai.cl
       email: denis.berroeta@uai.cl
-  date: "2026-04-28"
+  date: "2026-06-05"
   page-footer:
     left: "Copyright 2026, {{< var cit.name >}}"
   chapters:

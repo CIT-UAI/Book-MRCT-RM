@@ -3,9 +3,9 @@ title: "Planificación de Campaña"
 subtitle: "De la preselección técnica al diseño operativo de terreno"
 ---
 
-La ejecución de una campaña de validación empírica en la Región de Magallanes impone restricciones operativas superlativas. A los retos climáticos del extremo sur —viento racheado, frío, lluvia repentina— y a las extensas distancias entre cuencas, se suma el cuidado y gestión de herramientas tecnológicas (drones, sensores, computadores) cuya autonomía decae drásticamente a bajas temperaturas.
+La ejecución de una campaña de validación empírica en la Región Metropolitana de Santiago impone restricciones operativas distintas a las de territorios remotos. El desafío principal no es la distancia regional extrema, sino la combinación de congestión urbana, propiedad privada, accesos periurbanos, caminos cordilleranos, exposición a calor, episodios de mala calidad del aire, seguridad vial, permisos de ingreso y restricciones para vuelo de dron en áreas pobladas o cercanas a infraestructura crítica.
 
-Este capítulo detalla el marco logístico y el itinerario crítico que actúa como guía rectora de cada jornada, diseñado para proteger la integridad del equipo humano y maximizar el rendimiento científico de la expedición. La preselección técnica que alimenta esta planificación se presenta en @sec-diez-cuencas-jerk y @sec-terminales-h2-jerk; las fichas que se deben llevar a terreno se definen en @sec-ficha-tipo-cuenca.
+Este capítulo detalla el marco logístico y el itinerario crítico que actúa como guía rectora de cada jornada. La preselección técnica que alimenta esta planificación se presenta en @sec-diez-cuencas-jerk y @sec-puntos-estrategicos-rms; las fichas que se deben llevar a terreno se definen en @sec-ficha-tipo-cuenca.
 
 ::: {.callout-note}
 ## Objetivo
@@ -15,15 +15,15 @@ Construir un plan de campaña con cuencas principales, cuencas de reemplazo, rut
 
 ## Preparación cartográfica e inteligencia de terreno {#sec-inteligencia-terreno-offline}
 
-Al carecer de cobertura celular y señal 4G en extensas zonas rurales y esteparias —fuera del buffer urbano directo—, es obligatorio preparar "inteligencia de terreno" offline:
+Aunque la Región Metropolitana tiene buena cobertura de telecomunicaciones en áreas urbanas, la campaña no debe depender de señal móvil continua. Sectores de quebradas, precordillera, caminos interiores, predios privados o cajones cordilleranos pueden tener señal débil o nula. Por eso es obligatorio preparar inteligencia de terreno offline:
 
-- **Mapas y cartas digitales (Tablets/GPS):** generar proyectos georreferenciados offline (QGIS, Avenza Maps o similares) que incluyan la topología vial secundaria y terciaria.
-- **Coberturas y mosaicos MRCT:** cargar como capa de fondo en las tablets los mosaicos satelitales MRCT (NDVI, Humedad, Falso Color) de los periodos más recientes. Esto permite contrastar in situ la visión satelital con el paisaje real y planificar rutas de acceso evitando turberas infranqueables que el mosaico evidencie.
-- **Fichas precargadas:** las 10 cuencas objetivos (ej. RIDs 1641, 1808, 1298) deben tener sus coordenadas y rutas de aproximación pre-validadas antes de abandonar la base.
+- **Mapas y cartas digitales:** generar proyectos georreferenciados offline en QGIS, Avenza Maps o herramientas equivalentes, con red vial, pendientes, accesos, límites prediales aproximados, áreas protegidas y puntos de detención seguros.
+- **Coberturas y mosaicos MRCT:** cargar como capas de fondo los mosaicos satelitales MRCT recientes, mapas de `RES`, $PT$, jerk, macrozonas y puntos estratégicos RMS. Esto permite contrastar in situ la visión satelital con el paisaje real y revisar diferencias entre cuencas urbanas, periurbanas, agrícolas y cordilleranas.
+- **Fichas precargadas:** las 10 cuencas objetivo del buffer Santiago centro —por ejemplo RIDs 31, 66, 22, 194, 97 y 117— deben tener coordenadas, rutas de aproximación, restricciones y alternativa de acceso antes de salir a terreno.
 
 ## Decisión de cuencas finales {#sec-decision-cuencas-finales}
 
-La lista final de terreno se decide a partir de dos insumos ya definidos: la priorización por tensión dinámica del análisis de jerk (@sec-diez-cuencas-jerk) y la lectura prospectiva de terminales H2V (@sec-terminales-h2-jerk). Esta sección no redefine esos criterios; los transforma en una decisión operativa.
+La lista final de terreno se decide a partir de dos insumos ya definidos: la priorización por tensión dinámica del análisis de jerk (@sec-diez-cuencas-jerk) y la lectura de puntos estratégicos RMS (@sec-puntos-estrategicos-rms). Esta sección no redefine esos criterios; los transforma en una decisión operativa.
 
 Cada cuenca debe mantener una razón de selección explícita y trazable hacia alguno de esos insumos. Las decisiones basadas sólo en cercanía, conveniencia logística o ranking aislado de MRCT se evitan. El resultado esperado es una lista principal y una lista de reemplazo, validadas técnica y logísticamente, que luego se precargan en las fichas de @sec-ficha-tipo-cuenca.
 
@@ -33,113 +33,117 @@ Antes de la campaña se recomienda una reunión de revisión con personas o inst
 
 Temas mínimos de revisión:
 
-- caminos disponibles, estado estacional y puntos de cierre;
+- caminos disponibles, estado estacional, cierres y horarios de mayor congestión;
 - propiedad privada, portones, permisos o restricciones de ingreso;
-- zonas con viento fuerte, anegamiento, nieve, barro o baja conectividad;
-- antecedentes recientes de incendios, crecidas, sequías, obras, ganadería, tala, drenajes o cambios de uso;
+- cercanía a infraestructura crítica, zonas urbanas densas, aeródromos, tendidos eléctricos o áreas con restricción de vuelo;
+- antecedentes recientes de incendios, crecidas, sequías, obras, extracción de áridos, expansión urbana, cambios de uso, remociones en masa o afectación hídrica;
 - sitios seguros para detenerse, medir y volar dron;
 - cuencas alternativas visitables si falla el sitio principal.
 
-## Logística de vestuario y entornos húmedos {#sec-vestuario-entornos-humedos}
+## Logística de vestuario y condiciones metropolitanas {#sec-vestuario-entornos-humedos}
 
-El trabajo en terreno demandará cruzar vegas, humedales o cauces estacionales. La pérdida de calor corporal por humedad en los pies puede obligar a abortar prematuramente una jornada crítica.
+El trabajo en terreno puede combinar caminatas cortas en zonas urbanas o periurbanas con recorridos por quebradas, cauces secos, humedales, riberas, laderas y sectores cordilleranos. La logística debe cubrir calor, radiación, polvo, pendiente, agua superficial y cambios rápidos de temperatura en altura.
 
-- **Vestimenta integral:** sistema de 3 capas (Térmica de contacto + Polar de abrigo + Chaqueta cortavientos Gore-Tex/Impermeable).
-- **Protección de piernas y pies:** es imprescindible utilizar botas de agua de caña alta (con forro térmico) o calzado de trekking altamente impermeable complementado con polainas. Los pantalones deben ser repelentes al agua.
-- **Manejo de calcetines:** cada investigador debe cargar en su mochila de ataque 2 a 3 pares adicionales de calcetines técnicos de secado rápido o lana merino, para garantizar recambios inmediatos en caso de un anegamiento accidental.
+- **Vestimenta modular:** primera capa respirable, protección solar, cortavientos liviano y abrigo adicional para sectores precordilleranos o de tarde.
+- **Protección de piernas y pies:** calzado de trekking con buena tracción, polainas livianas en quebradas o vegetación densa y, cuando corresponda, botas impermeables para cauces, vegas o humedales.
+- **Manejo de hidratación y calor:** cada investigador debe cargar agua suficiente, sales o electrolitos y protección solar. En días de calor o mala calidad del aire, los transectos deben acortarse o moverse a horarios de menor exposición.
 
 ## Estructura del equipo y rigor en la observación {#sec-equipo-rigor-observacion}
 
 Dado el carácter de esta investigación aplicada, es inviable mantener una ceguera experimental estricta, pues ambos investigadores —como autores y operadores del modelo— conocen íntimamente los resultados, trayectorias y expectativas de la MRCT para cada cuenca.
 
-- **Adaptación y rigor metodológico:** esta falta de ceguera se neutraliza anclando la evaluación de manera inflexible a la rúbrica IEO definida en @sec-rúbrica-ieo. La nota 1–5 se asignará observando estrictamente los descriptores físicos, prohibiendo que el juicio se vea influenciado por "lo que el modelo dice que debería haber aquí".
-- **Compañerismo de campo:** en terreno, el trabajo se sincronizará orgánicamente: mientras un investigador pilota el dron evaluando el panorama cenital, el otro avanzará en el transecto peatonal y liderará la captura fotográfica terrestre y el levantamiento en planillas IEO, dialogando constantemente para consolidar la nota.
+- **Adaptación y rigor metodológico:** esta falta de ceguera se neutraliza anclando la evaluación de manera inflexible a la rúbrica IEO definida en @sec-rúbrica-ieo. La nota 1-5 se asignará observando estrictamente los descriptores físicos, evitando que el juicio se vea influenciado por lo que el modelo anticipa.
+- **Trabajo sincronizado:** mientras un investigador pilota el dron o revisa restricciones de vuelo, el otro avanza en el transecto peatonal, captura fotografías terrestres y completa la planilla IEO. Ambos consolidan la nota al cierre de cada punto.
 
 Roles adicionales que deben estar cubiertos:
 
 - responsable de navegación offline y rutas;
+- responsable de permisos, contactos y registro de restricciones;
 - responsable de respaldo de datos al cierre de cada jornada;
 - contacto de seguridad externo con comunicación al menos una vez por jornada.
 
 ## Permisos y restricciones {#sec-permisos-terreno}
 
-La carpeta de campaña debe registrar permisos y restricciones antes de salir. Esto incluye propiedad privada, áreas protegidas, infraestructura crítica, caminos interiores, borde costero, vuelos de dron y registro de imágenes sensibles.
+La carpeta de campaña debe registrar permisos y restricciones antes de salir. Esto incluye propiedad privada, áreas protegidas, infraestructura crítica, caminos interiores, vuelos de dron y registro de imágenes sensibles.
 
-Cuando existan dudas sobre ingreso o vuelo, la cuenca debe mantenerse como candidata condicionada hasta resolver la autorización.
+Cuando existan dudas sobre ingreso o vuelo, la cuenca debe mantenerse como candidata condicionada hasta resolver la autorización. En áreas urbanas o periurbanas, el uso de dron debe revisarse con especial cautela por cercanía a personas, edificaciones, vías de alto flujo, aeródromos, antenas, líneas eléctricas o infraestructura estratégica.
 
 ## Itinerario detallado (5 días) {#sec-itinerario-terreno}
 
-La campaña está diseñada con un límite operativo de **250 a 300 km diarios** y un máximo de **2 cuencas de validación profunda al día**, salvaguardando tiempos esenciales para logística energética.
+La campaña está diseñada con jornadas de desplazamiento controlado desde una base en Santiago, priorizando entre **2 y 3 cuencas de validación profunda al día** según accesibilidad, permisos y distancia efectiva. La planificación debe evitar horas punta cuando los traslados crucen la ciudad.
 
-### Día 1: Inserción, setup logístico y cartográfico (Punta Arenas)
+### Día 1: Base Santiago, setup logístico y cartográfico
 
 **AM:**
 
-- Vuelo de llegada, desembarque y arriendo/retiro inmediato de camioneta 4x4.
-- Visita a supermercado para aprovisionamiento pesado: raciones de marcha calóricas, almuerzos de terreno tipo sándwiches/frutos secos y abundante agua potable.
+- Reunión inicial de coordinación, revisión de roles y confirmación de permisos.
+- Retiro o chequeo de vehículo, preferentemente con capacidad para caminos secundarios y espacio seguro para equipos.
+- Revisión de pronóstico, calidad del aire, alertas de calor, estado de caminos y restricciones locales.
 
-**PM (en la base de operaciones):**
+**PM (base de operaciones):**
 
-- *Revisión cartográfica offline:* verificación de que todas las capas MRCT, mosaicos y rutas de acceso de las RIDs priorizadas abren correctamente en los dispositivos desconectados de internet.
-- *Setup de baterías:* carga masiva y al 100% de baterías de drones, cargadores portátiles, controles y celulares.
-- *Calibración vehicular:* prueba e instalación del inversor de corriente 12V a 220V en la toma de la camioneta (vital para los días 2 y 3).
+- *Revisión cartográfica offline:* verificación de que capas MRCT, mosaicos, puntos estratégicos RMS y rutas de acceso abren correctamente en dispositivos sin internet.
+- *Setup de baterías:* carga completa de baterías de drones, controles, celulares, GPS y baterías externas.
+- *Calibración de protocolo:* prueba de formulario IEO, nomenclatura de archivos y estructura de carpetas `RID_Dia_Foto/Dron`.
 
-### Día 2: Eje Norte — Terminales Estratégicos Hidrógeno Verde (Laredo / Cabo Negro)
+### Día 2: Eje Santiago centro y cuencas cercanas
 
-**Propósito:** zonas de presión prospectiva H2V en un buffer de 50 km.
+**Propósito:** validar cuencas del núcleo metropolitano o del buffer cercano asociadas a presión urbana, temperatura superficial, fragmentación y continuidad ecológica.
 
-- **08:30 – 09:30:** traslado desde Punta Arenas hacia el cuadrante norte (Ruta 9). El trayecto es de fácil acceso vehicular, pero requiere atención a bifurcaciones menores.
-- **09:30 – 12:00 (Cuenca RID 1808 o aledañas):**
-  - *Arribo y check de seguridad:* evaluación del viento dominante. Si las ráfagas son tolerables, despliegue inmediato del dron para captura de mosaicos y videos cenitales.
-  - *Transecto IEO:* caminata de 45–60 min penetrando la cuenca. Foco visual exhaustivo en buscar marcas tempranas de perturbación o estrés hídrico que el MRCT capturó como Intensificación.
-- **12:00 – 14:00 (Hito Crítico Logístico):** almuerzo protegido de la intemperie (cabina de camioneta o infraestructura cercana). Se conectan inmediatamente todas las baterías del dron descargadas al inversor 12V del vehículo.
-- **14:00 – 17:00 (Cuenca H2V N°2):** desplazamiento a la segunda cuenca del área —aprovechando las baterías recién estabilizadas— y ejecución del mismo ciclo (Dron + Transecto Peatonal + Rúbrica IEO).
-- **17:00 – 18:30:** retorno vial a Punta Arenas.
-- **20:00 – 21:00 (Gabinete Nocturno):** consolidación de datos. Etiquetado ordenado de los archivos multimedia bajo nomenclatura `RID_Dia_Foto/Dron`. Vaciado de planillas físicas IEO a la base Excel.
+- **08:30 – 09:30:** traslado temprano hacia la primera cuenca, evitando hora punta y verificando puntos seguros de detención.
+- **09:30 – 12:00 (Cuenca cercana, por ejemplo RID 114 o alternativa):**
+  - *Arribo y check de seguridad:* revisión de flujo vehicular, peatones, tendidos eléctricos y restricciones de dron.
+  - *Transecto IEO:* caminata de 45-60 min con foco en fragmentación, vegetación remanente, humedad superficial, infraestructura y perturbación directa.
+- **12:00 – 14:00:** almuerzo y respaldo parcial de fotografías. Recarga de baterías en base móvil o punto seguro.
+- **14:00 – 16:30 (Cuenca 2):** repetición del ciclo, priorizando contraste entre señal MRCT y observación urbana o periurbana.
+- **17:00 – 18:30:** retorno a base.
+- **20:00 – 21:00:** consolidación de datos, respaldo y revisión de consistencia de fichas.
 
-### Día 3: Eje Anomalías Cinemáticas (Jerk Elevado p90)
+### Día 3: Eje Norte - Tiltil y borde logístico-industrial
 
-**Propósito:** cuencas con mayores quiebres temporales estructurales (ej. RID 1641, 1298, 1602) dentro del radio de 80 km.
+**Propósito:** revisar cuencas cercanas a Tiltil y al borde norte, donde el análisis identifica jerk elevado y donde pueden coexistir presión logística, minería, infraestructura, aridez y fragmentación.
 
-- **08:00 – 10:30:** traslado hacia cuadrantes con cuencas de mayor prioridad dinámica. Las rutas pueden contemplar sectores esteparios expuestos donde el viento arreciará.
-- **10:30 – 12:30 (Cuenca Dinámica 1):**
-  - Si el viento supera las especificaciones técnicas del dron, la misión aérea se aborta inmediatamente por seguridad.
-  - El equipo concentra el 100% del esfuerzo en extender el transecto peatonal y enriquecer el archivo fotográfico terrestre, aumentando la toma de puntos IEO para suplir la visión aérea.
-- **12:30 – 14:30:** almuerzo en tránsito. Carga constante de equipos electrónicos mediante la camioneta en movimiento. Cambio de calcetines preventivo si se atravesaron zonas anegadas.
-- **14:30 – 17:00 (Cuenca Dinámica 2):** repetición del protocolo de evaluación visual directa (Fragmentación y Perturbación con máximo rigor, ya que suelen explicar los quiebres del Jerk).
-- **17:00 – 19:30:** largo recorrido de regreso a la base matriz.
-- **Noche (Gabinete):** respaldo cruzado (SD a notebook, notebook a Disco Duro/Nube).
+- **08:00 – 09:30:** traslado hacia Tiltil o sectores aledaños, con revisión de accesos y permisos.
+- **09:30 – 12:30 (Cuenca prioritaria, por ejemplo RID 22 o RID 19):**
+  - Evaluación de perturbación visible, continuidad de vegetación, cauces, suelos desnudos, caminos e infraestructura.
+  - Vuelo de dron sólo si las condiciones de seguridad, permisos y viento lo permiten.
+- **12:30 – 14:00:** almuerzo en punto seguro y respaldo parcial.
+- **14:00 – 17:00 (Cuenca alternativa del eje norte):** levantamiento IEO y registro fotográfico terrestre, con especial atención a gradientes de aridez y fragmentación.
+- **17:00 – 19:00:** retorno a base evitando tramos de alta congestión.
+- **Noche:** respaldo cruzado y revisión de hipótesis de terreno para el día siguiente.
 
-### Día 4: Eje Remanente / Periurbano y Holguras
+### Día 4: Eje Oriente - San José de Maipo y cabecera cordillerana
 
-**Propósito:** evaluar zonas colindantes al desarrollo urbano o absorber cuencas de reemplazo si hubo fallas climáticas los días previos.
+**Propósito:** revisar cuencas próximas a San José de Maipo y sectores cordilleranos, donde la sensibilidad hídrica, la nieve, los cauces, la pendiente y los cambios de cobertura pueden explicar señales MRCT.
 
-- **09:00 – 10:00:** desplazamiento corto hacia humedales periurbanos o cuencas costeras limítrofes.
-- **10:00 – 12:30 (Cuenca 5):** focalización en detectar fragmentación por subdivisiones prediales, zanjas clandestinas o perturbación histórica. El transecto se orienta hacia estas micro-rupturas.
-- **12:30 – 14:00:** almuerzo ágil. La cercanía urbana facilita, en caso de extrema necesidad, buscar cafeterías o estaciones para cargar equipos pesados.
-- **14:00 – 16:30 (Cuenca 6 — Levantamiento de Cierre):** última ejecución del IEO. Se busca el consenso final entre ambos investigadores para el cierre del catálogo.
-- **16:30 – 18:00:** retorno final y limpieza gruesa del equipamiento (drones, calzado con barro).
-- **20:00 – 22:00 (Gabinete Final):** primer cruce paramétrico in situ. Con los IEOs de las 6 cuencas listos, se puede trazar el primer gráfico de validación empírica preliminar.
+- **07:30 – 09:30:** salida temprana hacia el Cajón del Maipo para evitar congestión y maximizar horas de luz.
+- **09:30 – 12:30 (Cuenca prioritaria, por ejemplo RID 117 o RID 133):**
+  - Revisión de seguridad por pendiente, cauces, caída de material, rutas estrechas y puntos de detención.
+  - Transecto IEO con foco en humedad, vegetación de quebrada, nieve/hielo visible, estrés hídrico y perturbación antrópica.
+- **12:30 – 14:00:** almuerzo y recarga de equipos.
+- **14:00 – 16:30 (Cuenca alternativa cordillerana):** levantamiento de cierre del eje oriente.
+- **16:30 – 19:00:** retorno a Santiago.
+- **20:00 – 22:00:** revisión preliminar de consistencia entre observación y señales de jerk.
 
-### Día 5: Extracción y Retorno
+### Día 5: Holguras, reemplazos y cierre de campaña
 
-- **AM:** doble auditoría de seguridad. Se verifica la redundancia de los datos guardados en distintos formatos (discos físicos y cloud). Inspección final del vehículo arrendado, lavado y devolución en el aeropuerto.
-- **PM:** embarque de retorno, cerrando la campaña con la tranquilidad metodológica y técnica de haber documentado la verdad material del territorio magallánico.
+- **AM:** visita de cuencas de reemplazo no cubiertas por permiso, clima, seguridad o conectividad. Priorizar cuencas de alta señal MRCT que queden cerca de rutas ya validadas.
+- **PM:** auditoría de datos: respaldo físico y en nube, revisión de fichas completas, consolidación de fotografías, drones y observaciones.
+- **Cierre:** preparación de una minuta de hallazgos preliminares, cuencas no evaluables, restricciones encontradas y ajustes sugeridos al protocolo.
 
 ## Checklist previo {#sec-checklist-previo-terreno}
 
 Antes de salir:
 
 - cuencas principales y reemplazos definidos;
-- proyectos offline (QGIS / Avenza Maps) con mosaicos MRCT y rutas verificados en dispositivos desconectados;
-- fichas precargadas con `RID`, comuna, coordenadas y métricas MRCT;
+- proyectos offline con mosaicos MRCT, rutas, puntos estratégicos y restricciones cargados;
+- fichas precargadas con `RID`, macrozona, coordenadas, distancia a Santiago centro y métricas MRCT;
 - permisos revisados;
-- pronóstico meteorológico revisado;
-- dron, baterías (100%), hélices y tarjetas verificadas;
-- inversor 12V instalado y probado en camioneta;
+- pronóstico meteorológico, calidad del aire y alertas de calor revisadas;
+- dron, baterías, hélices y tarjetas verificadas;
+- baterías externas y sistema de carga en vehículo probado;
 - sensores y GPS revisados;
-- 2–3 pares de calcetines adicionales por persona (mochila de ataque);
-- botiquín, sistema de 3 capas, botas impermeables, agua y comunicación disponibles;
+- agua, protección solar, botiquín, chaleco reflectante y comunicación disponibles;
 - estructura de carpetas y nomenclatura de archivos definida (`RID_Dia_Foto/Dron`).
 
 ## Producto esperado {#sec-producto-planificacion-terreno}
@@ -149,7 +153,7 @@ Este capítulo deberá actualizarse cuando la campaña esté definida con:
 - tabla de cuencas principales;
 - tabla de cuencas de reemplazo;
 - mapa de rutas por eje;
-- calendario definitivo (5 días);
+- calendario definitivo;
 - responsables;
 - permisos requeridos;
 - riesgos principales y medidas de control;

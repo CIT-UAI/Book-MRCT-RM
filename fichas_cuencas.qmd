@@ -3,7 +3,7 @@ title: "Fichas de Cuencas"
 subtitle: "Ficha operativa para registro de terreno"
 ---
 
-Este capítulo define la ficha mínima que debe acompañar cada cuenca visitada. Su función es ordenar el registro de terreno, no volver a explicar la selección de cuencas ni la rúbrica IEO. La selección técnica se presenta en @sec-diez-cuencas-jerk y @sec-terminales-h2-jerk; la decisión logística de campaña se define en @sec-decision-cuencas-finales; y la evaluación IEO se rige por @sec-rúbrica-ieo y @sec-formula-ieo.
+Este capítulo define la ficha mínima que debe acompañar cada cuenca visitada. Su función es ordenar el registro de terreno, no volver a explicar la selección de cuencas ni la rúbrica IEO. La selección técnica se presenta en @sec-diez-cuencas-jerk y @sec-puntos-estrategicos-rms; la decisión logística de campaña se define en @sec-decision-cuencas-finales; y la evaluación IEO se rige por @sec-rúbrica-ieo y @sec-formula-ieo.
 
 ::: {.callout-note}
 ## Uso de la ficha
@@ -62,7 +62,7 @@ Las columnas de terreno deben mantenerse alineadas con el protocolo: viento, nub
 | Tipo trayectoria | Por definir |
 | Coordenada X objetivo | Por definir |
 | Coordenada Y objetivo | Por definir |
-| Criterio de selección | Referir a @sec-diez-cuencas-jerk, @sec-terminales-h2-jerk o @sec-decision-cuencas-finales |
+| Criterio de selección | Referir a @sec-diez-cuencas-jerk, @sec-puntos-estrategicos-rms o @sec-decision-cuencas-finales |
 
 : Identificación y precarga de la ficha de cuenca. {#tbl-ficha-identificacion-mrct}
 

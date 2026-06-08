@@ -19,7 +19,7 @@ Cada ficha debe incluir:
 |---|---|
 | Identificación | `RID`, comuna, prioridad, año crítico, tipo de evento y estado de selección. |
 | Señal MRCT | Jerk, percentil, `RES`, `PT`, $D$, $V$, $A$, $SENS$, $D_{local}` y clasificación disponible. |
-| Ubicación | mapa regional, mapa de detalle, coordenada objetivo, distancia a Punta Arenas y anillo logístico. |
+| Ubicación | mapa regional, mapa de detalle, coordenada objetivo, distancia a Santiago centro y anillo logístico. |
 | Pregunta de terreno | Qué condición se espera observar y qué duda debe resolver la visita. |
 | Acceso | ruta preliminar, restricciones, permisos y punto alternativo. |
 | Registros requeridos | fotografías, dron, temperatura, humedad, agua, nieve, cobertura y perturbaciones. |
@@ -40,7 +40,7 @@ Cada ficha debe incluir:
 | Jerk | Por definir |
 | Percentil anual | Por definir |
 | `RES` año crítico | Por definir |
-| Distancia a Punta Arenas | Por definir |
+| Distancia a Santiago centro | Por definir |
 | Anillo logístico | Por definir |
 | Estado de selección | Principal / reemplazo / descartada |
 

@@ -6,9 +6,9 @@ La Matriz de Resiliencia Climática Territorial (MRCT) organiza esas señales en
 
 La pregunta que guía el modelo es directa: ¿qué tan cerca o lejos se encuentra una unidad territorial de su régimen de referencia, cómo se está moviendo en el tiempo y qué tan expuesta aparece frente a presiones climáticas persistentes?
 
-La evaluación se aplica en la Región de Magallanes y de la Antártica Chilena, un territorio austral donde convergen campos de hielo, fiordos, estepas frías, bosques subantárticos, turberas y cuencas de alta sensibilidad climática. Esta diversidad convierte a Magallanes en un caso adecuado para observar cómo las señales satelitales permiten describir cambios ecosistémicos en territorios extensos, remotos y ambientalmente contrastados.
+La evaluación se aplica en la Región Metropolitana de Santiago, un territorio mediterráneo donde convergen alta cordillera, nieve estacional, glaciares altoandinos, cuenca urbana, valles agrícolas, bosque esclerófilo, humedales y una intensa presión antrópica. Esta diversidad convierte a la región en un caso adecuado para observar cómo las señales satelitales permiten describir cambios ecosistémicos en territorios densamente poblados, climáticamente sensibles y fuertemente transformados.
 
-![Región de Magallanes y de la Antártica Chilena.](images/estrecho-de-magallanes.jpg){#fig-region-magallanes fig-align="center" width="90%"}
+![Vista invernal de Santiago y la Cordillera de los Andes, donde se expresa el contraste entre cuenca urbana, precordillera y alta montaña.](images/santiago-de-chile-en-invierno.jpg){#fig-region-rms-intro fig-align="center" width="90%"}
 
 ## Por qué una matriz de resiliencia territorial
 
@@ -52,7 +52,7 @@ flowchart LR
     G --> H[Potencial de transición<br/>y resiliencia]
 ```
 
-El capítulo de región de estudio y unidades de análisis describe Magallanes, las cuencas hidrográficas, la grilla territorial y la huella antrópica. El capítulo de insumos describe las capas satelitales, el período de análisis y los criterios de control de calidad. El capítulo de indicadores base muestra cómo esas capas se convierten en métricas por cuenca y año. El capítulo de vector de estado integra los indicadores y define el dominio de referencia. Los capítulos de trayectoria e integración territorial incorporan dinámica temporal y contexto espacial. El capítulo de sensibilidad estima la reactividad frente a presiones climáticas. La síntesis final combina estas señales en el Potencial de Transición y en la resiliencia operativa.
+El capítulo de región de estudio y unidades de análisis describe la Región Metropolitana de Santiago, las cuencas hidrográficas, la grilla territorial y la huella antrópica. El capítulo de insumos describe las capas satelitales, el período de análisis y los criterios de control de calidad. El capítulo de indicadores base muestra cómo esas capas se convierten en métricas por cuenca y año. El capítulo de vector de estado integra los indicadores y define el dominio de referencia. Los capítulos de trayectoria e integración territorial incorporan dinámica temporal y contexto espacial. El capítulo de sensibilidad estima la reactividad frente a presiones climáticas. La síntesis final combina estas señales en el Potencial de Transición y en la resiliencia operativa.
 
 La lectura puede hacerse de dos formas. Quien necesite entender la arquitectura completa debe seguir el orden del libro. Quien busque una etapa específica puede entrar por el capítulo correspondiente, siempre teniendo presente que los productos finales dependen de la coherencia de toda la cadena.
 

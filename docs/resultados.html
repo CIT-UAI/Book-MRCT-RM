@@ -295,9 +295,9 @@ window.Quarto = {
   <li><a href="#sec-base-resultados" id="toc-sec-base-resultados" class="nav-link active" data-scroll-target="#sec-base-resultados"><span class="header-section-number">10.1</span> Base de resultados y cobertura</a></li>
   <li><a href="#sec-lectura-regional-2025" id="toc-sec-lectura-regional-2025" class="nav-link" data-scroll-target="#sec-lectura-regional-2025"><span class="header-section-number">10.2</span> Lectura regional 2025</a></li>
   <li><a href="#sec-trayectoria-regional-resultados" id="toc-sec-trayectoria-regional-resultados" class="nav-link" data-scroll-target="#sec-trayectoria-regional-resultados"><span class="header-section-number">10.3</span> Trayectoria regional 2013-2025</a></li>
-  <li><a href="#sec-comparacion-comunal-resultados" id="toc-sec-comparacion-comunal-resultados" class="nav-link" data-scroll-target="#sec-comparacion-comunal-resultados"><span class="header-section-number">10.4</span> Comparación comunal</a></li>
+  <li><a href="#sec-comparacion-comunal-resultados" id="toc-sec-comparacion-comunal-resultados" class="nav-link" data-scroll-target="#sec-comparacion-comunal-resultados"><span class="header-section-number">10.4</span> Comparación por macrozona MRCT</a></li>
   <li><a href="#sec-componentes-explicativos-resultados" id="toc-sec-componentes-explicativos-resultados" class="nav-link" data-scroll-target="#sec-componentes-explicativos-resultados"><span class="header-section-number">10.5</span> Componentes explicativos</a></li>
-  <li><a href="#sec-punta-arenas-resultados" id="toc-sec-punta-arenas-resultados" class="nav-link" data-scroll-target="#sec-punta-arenas-resultados"><span class="header-section-number">10.6</span> Doble clic sobre Punta Arenas</a></li>
+  <li><a href="#sec-area-central-resultados" id="toc-sec-area-central-resultados" class="nav-link" data-scroll-target="#sec-area-central-resultados"><span class="header-section-number">10.6</span> Doble clic sobre el área central metropolitana</a></li>
   <li><a href="#sec-sintesis-resultados" id="toc-sec-sintesis-resultados" class="nav-link" data-scroll-target="#sec-sintesis-resultados"><span class="header-section-number">10.7</span> Síntesis de hallazgos</a></li>
   <li><a href="#sec-preguntas-validacion-resultados" id="toc-sec-preguntas-validacion-resultados" class="nav-link" data-scroll-target="#sec-preguntas-validacion-resultados"><span class="header-section-number">10.8</span> Preguntas para validación territorial</a></li>
   <li><a href="#sec-notas-resultados" id="toc-sec-notas-resultados" class="nav-link" data-scroll-target="#sec-notas-resultados"><span class="header-section-number">10.9</span> Notas metodológicas</a></li>
@@ -310,7 +310,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Análisis de Resultados</span></h1>
-<p class="subtitle lead">Lectura territorial de la MRCT en la Región de Magallanes</p>
+<p class="subtitle lead">Lectura territorial de la MRCT en la Región Metropolitana de Santiago</p>
 </div>
 
 
@@ -327,8 +327,8 @@ window.Quarto = {
 </header>
 
 
-<p>Este capítulo presenta los resultados de la Matriz de Resiliencia Climática Territorial para la Región de Magallanes y de la Antártica Chilena. La lectura se construye a partir del panel temporal consolidado, las tablas de síntesis comunal y las salidas cartográficas generadas para el análisis territorial.</p>
-<p>La estructura sigue el flujo general de análisis definido para el libro: primero se revisa la cobertura de datos, luego se describe el comportamiento regional, después se traduce la información a escala comunal, se descomponen los componentes que explican el resultado final y finalmente se realiza un doble clic sobre Punta Arenas.</p>
+<p>Este capítulo presenta los resultados de la Matriz de Resiliencia Climática Territorial para la Región Metropolitana de Santiago. La lectura se construye a partir del panel temporal consolidado, la capa de cuencas RMS y las salidas cartográficas generadas por el flujo de análisis <code>MRCT_Analisis_Resultados</code>.</p>
+<p>La estructura sigue el flujo general del libro: primero se revisa la cobertura de datos, luego se describe el comportamiento regional, después se traduce la información a macrozonas MRCT, se descomponen los componentes que explican el resultado final y finalmente se realiza un doble clic sobre el área central metropolitana.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -344,8 +344,9 @@ Clave de lectura
 </div>
 <section id="sec-base-resultados" class="level2" data-number="10.1">
 <h2 data-number="10.1" class="anchored" data-anchor-id="sec-base-resultados"><span class="header-section-number">10.1</span> Base de resultados y cobertura</h2>
-<p>El panel maestro contiene <strong>273.520 registros</strong>, organizados como <strong>21.040 cuencas</strong> observadas durante <strong>13 años</strong>, entre <strong>2013 y 2025</strong>. La capa espacial asociada contiene las mismas 21.040 cuencas y utiliza el sistema de referencia EPSG:32719. Para 2025, el análisis cubre diez comunas: Punta Arenas, Laguna Blanca, Río Verde, San Gregorio, Cabo de Hornos, Porvenir, Primavera, Timaukel, Puerto Natales y Torres del Paine.</p>
-<p>La cobertura temporal por cuenca es completa: las 21.040 cuencas tienen registros para los 13 años del período. Sin embargo, no todas las variables derivadas tienen la misma disponibilidad en 2025, porque algunas dependen de diferencias temporales consecutivas, series válidas o cálculos espaciales que requieren datos suficientes.</p>
+<p>El panel maestro contiene <strong>4.693 registros</strong>, organizados como <strong>361 cuencas</strong> observadas durante <strong>13 años</strong>, entre <strong>2013 y 2025</strong>. La capa espacial asociada contiene las mismas 361 cuencas y utiliza el sistema de referencia EPSG:32719. Para 2025, el análisis cubre toda la Región Metropolitana de Santiago a partir de una agregación territorial reproducible por macrozonas MRCT.</p>
+<p>Los productos RMS disponibles no incluyen una codificación comunal dentro de los polígonos de cuenca. Por esta razón, la lectura territorial usa cuatro macrozonas derivadas de los centroides de las cuencas: <strong>Norponiente</strong>, <strong>Nororiente</strong>, <strong>Surponiente</strong> y <strong>Suroriente</strong>. Esta agregación es analítica y no reemplaza una división administrativa oficial.</p>
+<p>La cobertura temporal por cuenca es completa: las 361 cuencas tienen registros para los 13 años del período. Sin embargo, no todas las variables derivadas tienen la misma disponibilidad en 2025, porque algunas dependen de diferencias temporales consecutivas, series válidas o cálculos espaciales que requieren datos suficientes.</p>
 <div id="tbl-cobertura-resultados" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-cobertura-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -377,38 +378,38 @@ Table&nbsp;10.1: Cobertura de variables MRCT para el año 2025.
 <tr class="even">
 <td>Indicador con disponibilidad parcial</td>
 <td>IEH</td>
-<td style="text-align: right;">56,4%</td>
+<td style="text-align: right;">39,3%</td>
 <td>Debe interpretarse con cautela en comparaciones finas.</td>
 </tr>
 <tr class="odd">
 <td>Dominio estructural</td>
 <td><span class="math inline">D</span></td>
-<td style="text-align: right;">56,4%</td>
-<td>Disponible para 11.858 cuencas en 2025.</td>
+<td style="text-align: right;">39,3%</td>
+<td>Disponible para 142 cuencas en 2025.</td>
 </tr>
 <tr class="even">
 <td>Contexto espacial</td>
 <td><span class="math inline">D_{local}</span></td>
-<td style="text-align: right;">54,6%</td>
-<td>Disponible para 11.495 cuencas en 2025.</td>
+<td style="text-align: right;">34,6%</td>
+<td>Disponible para 125 cuencas en 2025.</td>
 </tr>
 <tr class="odd">
 <td>Trayectoria temporal</td>
 <td><span class="math inline">V</span></td>
-<td style="text-align: right;">40,3%</td>
-<td>Disponible para 8.483 cuencas en 2025.</td>
+<td style="text-align: right;">36,6%</td>
+<td>Disponible para 132 cuencas en 2025.</td>
 </tr>
 <tr class="even">
 <td>Trayectoria temporal</td>
 <td><span class="math inline">A</span></td>
-<td style="text-align: right;">27,4%</td>
-<td>Disponible para 5.761 cuencas en 2025.</td>
+<td style="text-align: right;">30,7%</td>
+<td>Disponible para 111 cuencas en 2025.</td>
 </tr>
 <tr class="odd">
 <td>Trayectoria temporal</td>
 <td><span class="math inline">J</span></td>
-<td style="text-align: right;">17,9%</td>
-<td>Disponible para 3.770 cuencas en 2025.</td>
+<td style="text-align: right;">28,8%</td>
+<td>Disponible para 104 cuencas en 2025.</td>
 </tr>
 <tr class="even">
 <td>Síntesis MRCT</td>
@@ -425,7 +426,7 @@ Table&nbsp;10.1: Cobertura de variables MRCT para el año 2025.
 </section>
 <section id="sec-lectura-regional-2025" class="level2 page-columns page-full" data-number="10.2">
 <h2 data-number="10.2" class="anchored" data-anchor-id="sec-lectura-regional-2025"><span class="header-section-number">10.2</span> Lectura regional 2025</h2>
-<p>En 2025, la región muestra una distribución muy polarizada de resiliencia operativa. La mediana regional de <code>RES</code> es <strong>0,094</strong>, mientras la media alcanza <strong>0,462</strong>. Esta diferencia indica que existe un grupo amplio de cuencas con valores bajos y, al mismo tiempo, un conjunto importante de cuencas con resiliencia alta o máxima.</p>
+<p>En 2025, la Región Metropolitana muestra una distribución polarizada. La mediana regional de <code>RES</code> alcanza <strong>1,000</strong>, mientras la media es <strong>0,667</strong>. Esta diferencia indica que existe un conjunto mayoritario de cuencas con resiliencia alta o máxima, junto con un subconjunto crítico de cuencas con <code>RES</code> muy bajo.</p>
 <div id="tbl-sintesis-regional-2025" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-sintesis-regional-2025-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -442,72 +443,72 @@ Table&nbsp;10.2: Síntesis regional MRCT para 2025.
 <tbody>
 <tr class="odd">
 <td>Cuencas evaluadas</td>
-<td style="text-align: right;">21.040</td>
+<td style="text-align: right;">361</td>
 </tr>
 <tr class="even">
 <td>Mediana regional de <code>RES</code></td>
-<td style="text-align: right;">0,094</td>
+<td style="text-align: right;">1,000</td>
 </tr>
 <tr class="odd">
 <td>Media regional de <code>RES</code></td>
-<td style="text-align: right;">0,462</td>
+<td style="text-align: right;">0,667</td>
 </tr>
 <tr class="even">
 <td>Mediana de <span class="math inline">PT</span></td>
-<td style="text-align: right;">9,622</td>
+<td style="text-align: right;">0,000</td>
 </tr>
 <tr class="odd">
 <td>Media de <span class="math inline">PT</span></td>
-<td style="text-align: right;">290,975</td>
+<td style="text-align: right;">24,352</td>
 </tr>
 <tr class="even">
 <td>Cuencas en <code>Alta_Resiliencia</code></td>
-<td style="text-align: right;">43,7%</td>
+<td style="text-align: right;">60,7%</td>
 </tr>
 <tr class="odd">
 <td>Cuencas en <code>Colapso_Potencial</code></td>
-<td style="text-align: right;">54,5%</td>
+<td style="text-align: right;">27,1%</td>
 </tr>
 <tr class="even">
 <td>Cuencas en <code>Transicion</code></td>
-<td style="text-align: right;">59,7%</td>
+<td style="text-align: right;">63,4%</td>
 </tr>
 <tr class="odd">
 <td>Cuencas en <code>Degradacion_Activa</code></td>
-<td style="text-align: right;">4,8%</td>
+<td style="text-align: right;">0,6%</td>
 </tr>
 <tr class="even">
 <td>Cuencas en <code>Zona_No_Apta</code></td>
-<td style="text-align: right;">5,7%</td>
+<td style="text-align: right;">7,8%</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<p>El Potencial de Transición presenta una distribución altamente asimétrica. Su mediana regional es <strong>9,622</strong>, pero el valor máximo supera <strong>1.508.000</strong>. Por esta razón, los mapas y gráficos de <span class="math inline">PT</span> usan escala logarítmica <code>log1p(PT)</code>, mientras que las tablas reportan el valor original.</p>
+<p>El Potencial de Transición presenta una distribución altamente asimétrica. La mediana regional es <strong>0,000</strong>, pero el máximo alcanza <strong>4.254,180</strong>. Por esta razón, los mapas y gráficos de <span class="math inline">PT</span> usan escala logarítmica <code>log1p(PT)</code>, mientras que las tablas reportan el valor original.</p>
 <div id="fig-mapa-res-pt-2025" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-mapa-res-pt-2025-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/resultados/mapa_res_pt_2025.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+<img src="images/resultados_rms/MRCT_Analisis_Resultados_11_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-mapa-res-pt-2025-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10.1: Distribución espacial de <code>RES</code> y <span class="math inline">PT</span> para 2025. Elaboración propia.
+Figure&nbsp;10.1: Distribución espacial de <code>RES</code> y <span class="math inline">PT</span> para 2025 en la Región Metropolitana de Santiago. Elaboración propia.
 </figcaption>
 </figure>
 </div>
-<p>La lectura espacial muestra que las cuencas con menor resiliencia no deben interpretarse como un único bloque homogéneo. Hay zonas con alta presión de transición, cuencas con comportamiento extremo y áreas con resiliencia alta que permanecen cercanas al estado de referencia. La combinación entre mapa, distribución de estados y tipologías dinámicas permite separar nivel, trayectoria y contexto.</p>
+<p>La lectura espacial muestra que las cuencas críticas no forman un único bloque homogéneo. El contraste entre zonas de alta resiliencia, cuencas con presión de transición y sectores con bajo <code>RES</code> debe leerse junto con las tipologías dinámicas y el contexto espacial.</p>
 <div id="fig-distribucion-res-state-type" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-distribucion-res-state-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/resultados/distribucion_res_state_type.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+<img src="images/resultados_rms/MRCT_Analisis_Resultados_12_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-distribucion-res-state-type-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;10.2: Distribución anual de <code>RES_STATE</code> y composición de <code>RES_TYPE</code> en 2025.
 </figcaption>
 </figure>
 </div>
-<p>Las cuencas con menor <code>RES</code> en 2025 se concentran principalmente en Cabo de Hornos, Timaukel, Puerto Natales, Río Verde y algunos casos de Punta Arenas. La tabla siguiente muestra los diez casos más extremos ordenados por menor resiliencia operativa.</p>
+<p>Las cuencas con menor <code>RES</code> en 2025 se concentran principalmente en las macrozonas Surponiente, Suroriente y Nororiente. La tabla siguiente muestra los diez casos más extremos ordenados por menor resiliencia operativa.</p>
 <div id="tbl-cuencas-menor-res" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-cuencas-menor-res-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -529,7 +530,7 @@ Table&nbsp;10.3: Diez cuencas con menor resiliencia operativa en 2025.
 <tr class="header">
 <th style="text-align: right;">Ranking</th>
 <th style="text-align: right;">RID</th>
-<th>Comuna</th>
+<th>Macrozona MRCT</th>
 <th style="text-align: right;"><code>RES</code></th>
 <th style="text-align: right;"><span class="math inline">PT</span></th>
 <th><code>RES_TYPE</code></th>
@@ -540,186 +541,195 @@ Table&nbsp;10.3: Diez cuencas con menor resiliencia operativa en 2025.
 <tbody>
 <tr class="odd">
 <td style="text-align: right;">1</td>
-<td style="text-align: right;">6067</td>
-<td>Cabo de Hornos</td>
-<td style="text-align: right;">0,000001</td>
-<td style="text-align: right;">1.508.758</td>
-<td>Degradacion_Activa</td>
-<td style="text-align: right;">8,27</td>
-<td style="text-align: right;">5,00</td>
+<td style="text-align: right;">330</td>
+<td>Surponiente</td>
+<td style="text-align: right;">0,000235</td>
+<td style="text-align: right;">4.254,180</td>
+<td>Recuperacion_Ecologica</td>
+<td style="text-align: right;">1,172</td>
+<td style="text-align: right;">-0,006</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">2</td>
-<td style="text-align: right;">10256</td>
-<td>Timaukel</td>
-<td style="text-align: right;">0,000002</td>
-<td style="text-align: right;">555.227</td>
-<td>Transicion</td>
-<td style="text-align: right;">8,17</td>
-<td style="text-align: right;">NA</td>
+<td style="text-align: right;">202</td>
+<td>Suroriente</td>
+<td style="text-align: right;">0,001074</td>
+<td style="text-align: right;">929,889</td>
+<td>Resiliencia_Estable</td>
+<td style="text-align: right;">2,360</td>
+<td style="text-align: right;">-0,016</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">3</td>
-<td style="text-align: right;">14352</td>
-<td>Puerto Natales</td>
-<td style="text-align: right;">0,000002</td>
-<td style="text-align: right;">496.299</td>
-<td>Degradacion_Activa</td>
-<td style="text-align: right;">1,87</td>
-<td style="text-align: right;">5,00</td>
+<td style="text-align: right;">6</td>
+<td>Nororiente</td>
+<td style="text-align: right;">0,002596</td>
+<td style="text-align: right;">384,190</td>
+<td>Resiliencia_Tensionada</td>
+<td style="text-align: right;">4,395</td>
+<td style="text-align: right;">0,042</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">4</td>
-<td style="text-align: right;">6059</td>
-<td>Cabo de Hornos</td>
-<td style="text-align: right;">0,000004</td>
-<td style="text-align: right;">235.544</td>
-<td>Degradacion_Activa</td>
-<td style="text-align: right;">1,07</td>
-<td style="text-align: right;">3,83</td>
+<td style="text-align: right;">247</td>
+<td>Surponiente</td>
+<td style="text-align: right;">0,004315</td>
+<td style="text-align: right;">230,766</td>
+<td>Transicion</td>
+<td style="text-align: right;">2,240</td>
+<td style="text-align: right;">NA</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">5</td>
-<td style="text-align: right;">6646</td>
-<td>Cabo de Hornos</td>
-<td style="text-align: right;">0,000007</td>
-<td style="text-align: right;">152.989</td>
-<td>Transicion</td>
-<td style="text-align: right;">38,35</td>
-<td style="text-align: right;">NA</td>
+<td style="text-align: right;">225</td>
+<td>Surponiente</td>
+<td style="text-align: right;">0,005008</td>
+<td style="text-align: right;">198,666</td>
+<td>Degradacion_Activa</td>
+<td style="text-align: right;">0,955</td>
+<td style="text-align: right;">0,369</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">6</td>
-<td style="text-align: right;">6076</td>
-<td>Cabo de Hornos</td>
-<td style="text-align: right;">0,000007</td>
-<td style="text-align: right;">149.191</td>
-<td>Transicion</td>
-<td style="text-align: right;">3,21</td>
-<td style="text-align: right;">NA</td>
+<td style="text-align: right;">195</td>
+<td>Suroriente</td>
+<td style="text-align: right;">0,005389</td>
+<td style="text-align: right;">184,554</td>
+<td>Resiliencia_Estable</td>
+<td style="text-align: right;">1,171</td>
+<td style="text-align: right;">-0,236</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">7</td>
-<td style="text-align: right;">6090</td>
-<td>Cabo de Hornos</td>
-<td style="text-align: right;">0,000009</td>
-<td style="text-align: right;">113.288</td>
-<td>Degradacion_Activa</td>
-<td style="text-align: right;">26,26</td>
-<td style="text-align: right;">0,78</td>
+<td style="text-align: right;">204</td>
+<td>Surponiente</td>
+<td style="text-align: right;">0,007145</td>
+<td style="text-align: right;">138,954</td>
+<td>Resiliencia_Tensionada</td>
+<td style="text-align: right;">2,105</td>
+<td style="text-align: right;">0,137</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">8</td>
-<td style="text-align: right;">10329</td>
-<td>Timaukel</td>
-<td style="text-align: right;">0,000014</td>
-<td style="text-align: right;">73.318</td>
-<td>Transicion</td>
-<td style="text-align: right;">1,97</td>
-<td style="text-align: right;">NA</td>
+<td style="text-align: right;">66</td>
+<td>Nororiente</td>
+<td style="text-align: right;">0,007303</td>
+<td style="text-align: right;">135,924</td>
+<td>Resiliencia_Estable</td>
+<td style="text-align: right;">1,267</td>
+<td style="text-align: right;">-0,492</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">9</td>
-<td style="text-align: right;">4638</td>
-<td>Río Verde</td>
-<td style="text-align: right;">0,000014</td>
-<td style="text-align: right;">69.173</td>
+<td style="text-align: right;">158</td>
+<td>Suroriente</td>
+<td style="text-align: right;">0,007338</td>
+<td style="text-align: right;">135,271</td>
 <td>Transicion</td>
-<td style="text-align: right;">347,29</td>
+<td style="text-align: right;">0,000</td>
 <td style="text-align: right;">NA</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">10</td>
-<td style="text-align: right;">6055</td>
-<td>Cabo de Hornos</td>
-<td style="text-align: right;">0,000018</td>
-<td style="text-align: right;">56.113</td>
-<td>Degradacion_Activa</td>
-<td style="text-align: right;">5,69</td>
-<td style="text-align: right;">0,65</td>
+<td style="text-align: right;">111</td>
+<td>Norponiente</td>
+<td style="text-align: right;">0,008835</td>
+<td style="text-align: right;">112,188</td>
+<td>Resiliencia_Tensionada</td>
+<td style="text-align: right;">1,700</td>
+<td style="text-align: right;">0,016</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<p>Estos casos no deben leerse sólo como “peores cuencas”. Algunos combinan baja resiliencia con degradación activa; otros aparecen en transición sin velocidad disponible para 2025. La diferencia es importante, porque una misma condición final puede originarse en trayectorias distintas.</p>
+<p>Estos casos no deben leerse sólo como “peores cuencas”. Algunos combinan baja resiliencia con señales de recuperación relativa; otros muestran tensión o degradación activa. La diferencia es importante porque una misma condición final puede originarse en trayectorias distintas.</p>
 </section>
 <section id="sec-trayectoria-regional-resultados" class="level2 page-columns page-full" data-number="10.3">
 <h2 data-number="10.3" class="anchored" data-anchor-id="sec-trayectoria-regional-resultados"><span class="header-section-number">10.3</span> Trayectoria regional 2013-2025</h2>
-<p>La serie regional muestra cambios marcados entre la línea base y los años recientes. La mediana de <code>RES</code> alcanza valores altos en 2017, 2022 y 2023, pero cae en 2024 y vuelve a descender en 2025 hasta <strong>0,094</strong>. En paralelo, la mediana de <span class="math inline">D</span> se reduce desde <strong>0,633</strong> en 2024 a <strong>0,517</strong> en 2025, mientras la velocidad mediana de 2025 es <strong>-0,065</strong>.</p>
-<div id="tbl-trayectoria-regional" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>La serie regional muestra una trayectoria con resiliencia mediana alta durante todo el período reciente, pero con señales dinámicas localizadas. En 2025, la mediana de <code>RES</code> se mantiene en <strong>1,000</strong>, mientras que la mediana de <span class="math inline">D</span> es <strong>0,524</strong>, la mediana de <span class="math inline">V</span> es <strong>-0,025</strong> y la mediana de <span class="math inline">J</span> es <strong>-0,052</strong> en las cuencas con datos disponibles.</p>
+<div id="tbl-estadisticas-regionales-2025" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-trayectoria-regional-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;10.4: Trayectoria regional reciente de indicadores MRCT.
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-estadisticas-regionales-2025-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;10.4: Estadísticas descriptivas regionales de indicadores MRCT para 2025.
 </figcaption>
-<div aria-describedby="tbl-trayectoria-regional-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="tbl-estadisticas-regionales-2025-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
-<colgroup>
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: right;">Año</th>
-<th style="text-align: right;"><code>RES</code> mediana</th>
-<th style="text-align: right;"><code>RES</code> media</th>
-<th style="text-align: right;"><span class="math inline">D</span> mediana</th>
-<th style="text-align: right;"><span class="math inline">D</span> media</th>
-<th style="text-align: right;"><span class="math inline">V</span> mediana</th>
-<th style="text-align: right;"><span class="math inline">V</span> media</th>
+<th>Indicador 2025</th>
+<th style="text-align: right;">Media</th>
+<th style="text-align: right;">Mediana</th>
+<th style="text-align: right;">Mínimo</th>
+<th style="text-align: right;">P25</th>
+<th style="text-align: right;">P75</th>
+<th style="text-align: right;">Máximo</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: right;">2021</td>
-<td style="text-align: right;">0,113</td>
-<td style="text-align: right;">0,475</td>
-<td style="text-align: right;">0,505</td>
-<td style="text-align: right;">0,633</td>
-<td style="text-align: right;">-0,005</td>
-<td style="text-align: right;">-0,022</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">2022</td>
-<td style="text-align: right;">1,000</td>
+<td><code>RES</code></td>
 <td style="text-align: right;">0,667</td>
-<td style="text-align: right;">0,595</td>
-<td style="text-align: right;">0,786</td>
-<td style="text-align: right;">0,040</td>
-<td style="text-align: right;">0,104</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">2023</td>
 <td style="text-align: right;">1,000</td>
-<td style="text-align: right;">0,589</td>
-<td style="text-align: right;">0,680</td>
-<td style="text-align: right;">0,832</td>
-<td style="text-align: right;">0,024</td>
-<td style="text-align: right;">0,055</td>
+<td style="text-align: right;">0,000</td>
+<td style="text-align: right;">0,172</td>
+<td style="text-align: right;">1,000</td>
+<td style="text-align: right;">1,000</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;">2024</td>
-<td style="text-align: right;">0,147</td>
-<td style="text-align: right;">0,494</td>
-<td style="text-align: right;">0,633</td>
-<td style="text-align: right;">0,801</td>
-<td style="text-align: right;">-0,024</td>
-<td style="text-align: right;">-0,035</td>
+<td><span class="math inline">PT</span></td>
+<td style="text-align: right;">24,352</td>
+<td style="text-align: right;">0,000</td>
+<td style="text-align: right;">0,000</td>
+<td style="text-align: right;">0,000</td>
+<td style="text-align: right;">4,831</td>
+<td style="text-align: right;">4.254,180</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;">2025</td>
-<td style="text-align: right;">0,094</td>
-<td style="text-align: right;">0,462</td>
-<td style="text-align: right;">0,517</td>
-<td style="text-align: right;">0,672</td>
-<td style="text-align: right;">-0,065</td>
-<td style="text-align: right;">-0,121</td>
+<td><span class="math inline">D</span></td>
+<td style="text-align: right;">0,583</td>
+<td style="text-align: right;">0,524</td>
+<td style="text-align: right;">0,319</td>
+<td style="text-align: right;">0,434</td>
+<td style="text-align: right;">0,629</td>
+<td style="text-align: right;">4,789</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">V</span></td>
+<td style="text-align: right;">-0,064</td>
+<td style="text-align: right;">-0,025</td>
+<td style="text-align: right;">-0,819</td>
+<td style="text-align: right;">-0,095</td>
+<td style="text-align: right;">0,011</td>
+<td style="text-align: right;">0,369</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">A</span></td>
+<td style="text-align: right;">-0,155</td>
+<td style="text-align: right;">-0,029</td>
+<td style="text-align: right;">-1,615</td>
+<td style="text-align: right;">-0,249</td>
+<td style="text-align: right;">0,046</td>
+<td style="text-align: right;">0,595</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">J</span></td>
+<td style="text-align: right;">-0,294</td>
+<td style="text-align: right;">-0,052</td>
+<td style="text-align: right;">-2,442</td>
+<td style="text-align: right;">-0,497</td>
+<td style="text-align: right;">0,064</td>
+<td style="text-align: right;">1,117</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">SENS</span></td>
+<td style="text-align: right;">0,676</td>
+<td style="text-align: right;">0,000</td>
+<td style="text-align: right;">0,000</td>
+<td style="text-align: right;">0,000</td>
+<td style="text-align: right;">1,002</td>
+<td style="text-align: right;">11,176</td>
 </tr>
 </tbody>
 </table>
@@ -729,23 +739,23 @@ Table&nbsp;10.4: Trayectoria regional reciente de indicadores MRCT.
 <div id="fig-trayectoria-regional-resultados" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-trayectoria-regional-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/resultados/trayectoria_regional_2013_2025.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+<img src="images/resultados_rms/MRCT_Analisis_Resultados_14_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-trayectoria-regional-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;10.3: Trayectoria regional MRCT entre 2013 y 2025. La línea continua muestra la mediana y la línea segmentada la media de las cuencas.
 </figcaption>
 </figure>
 </div>
-<p>La caída de <code>RES</code> en 2025 no debe interpretarse automáticamente como deterioro lineal de toda la región. La media y la mediana se comportan de forma distinta, y la distribución es muy asimétrica. Esto confirma que la MRCT debe leerse con mapas, percentiles y tipologías dinámicas, no sólo con promedios regionales.</p>
+<p>La estabilidad de la mediana regional no implica ausencia de riesgo. La media de <code>RES</code>, la dispersión interna y las cuencas de bajo valor muestran que el problema territorial está concentrado en subconjuntos específicos. Por eso la MRCT debe leerse con mapas, percentiles y tipologías dinámicas, no sólo con promedios regionales.</p>
 </section>
 <section id="sec-comparacion-comunal-resultados" class="level2 page-columns page-full" data-number="10.4">
-<h2 data-number="10.4" class="anchored" data-anchor-id="sec-comparacion-comunal-resultados"><span class="header-section-number">10.4</span> Comparación comunal</h2>
-<p>La agregación comunal permite traducir la lectura de cuencas a una escala de gestión pública. Esta agregación usa la asignación comunal disponible en la capa espacial, por lo que debe entenderse como una lectura administrativa de resultados hidrográficos.</p>
-<p>En 2025, las comunas con menor mediana de <code>RES</code> son Río Verde, Torres del Paine y Puerto Natales, todas con medianas cercanas a <strong>0,04</strong>. Cabo de Hornos también muestra una mediana baja (<strong>0,09</strong>), aunque con una proporción mayor de cuencas en alta resiliencia que las tres anteriores. Punta Arenas ocupa una posición intermedia: mediana <strong>0,66</strong>, pero con una heterogeneidad interna fuerte.</p>
+<h2 data-number="10.4" class="anchored" data-anchor-id="sec-comparacion-comunal-resultados"><span class="header-section-number">10.4</span> Comparación por macrozona MRCT</h2>
+<p>La agregación por macrozona permite traducir la lectura de cuencas a una escala territorial más comunicable. Esta agregación usa centroides y no límites administrativos, por lo que debe entenderse como una lectura analítica de resultados hidrográficos.</p>
+<p>En 2025, la macrozona con menor mediana de <code>RES</code> es <strong>Suroriente</strong>, con mediana <strong>0,23</strong> y 43,59% de cuencas en <code>Colapso_Potencial</code>. Las otras tres macrozonas tienen mediana igual a <strong>1,00</strong>, pero mantienen subconjuntos críticos internos.</p>
 <div id="tbl-comunal-resultados-2025" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-comunal-resultados-2025-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;10.5: Comparación comunal de resultados MRCT para 2025.
+Table&nbsp;10.5: Comparación por macrozona MRCT de resultados para 2025.
 </figcaption>
 <div aria-describedby="tbl-comunal-resultados-2025-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -763,7 +773,7 @@ Table&nbsp;10.5: Comparación comunal de resultados MRCT para 2025.
 </colgroup>
 <thead>
 <tr class="header">
-<th>Comuna</th>
+<th>Macrozona MRCT</th>
 <th style="text-align: right;">Cuencas</th>
 <th style="text-align: right;"><code>RES</code> media</th>
 <th style="text-align: right;"><code>RES</code> mediana</th>
@@ -777,124 +787,52 @@ Table&nbsp;10.5: Comparación comunal de resultados MRCT para 2025.
 </thead>
 <tbody>
 <tr class="odd">
-<td>Puerto Natales</td>
-<td style="text-align: right;">8.574</td>
-<td style="text-align: right;">0,32</td>
-<td style="text-align: right;">0,04</td>
-<td style="text-align: right;">21,33</td>
-<td style="text-align: right;">0,49</td>
-<td style="text-align: right;">-0,17</td>
-<td style="text-align: right;">1,13</td>
-<td style="text-align: right;">69,28%</td>
-<td style="text-align: right;">29,48%</td>
-</tr>
-<tr class="even">
-<td>Río Verde</td>
-<td style="text-align: right;">1.405</td>
-<td style="text-align: right;">0,31</td>
-<td style="text-align: right;">0,04</td>
-<td style="text-align: right;">24,75</td>
-<td style="text-align: right;">0,55</td>
-<td style="text-align: right;">0,02</td>
-<td style="text-align: right;">1,01</td>
-<td style="text-align: right;">70,53%</td>
-<td style="text-align: right;">27,54%</td>
-</tr>
-<tr class="odd">
-<td>Torres del Paine</td>
-<td style="text-align: right;">795</td>
-<td style="text-align: right;">0,30</td>
-<td style="text-align: right;">0,04</td>
-<td style="text-align: right;">21,67</td>
-<td style="text-align: right;">0,81</td>
-<td style="text-align: right;">0,03</td>
-<td style="text-align: right;">0,72</td>
-<td style="text-align: right;">71,82%</td>
-<td style="text-align: right;">26,04%</td>
-</tr>
-<tr class="even">
-<td>Cabo de Hornos</td>
-<td style="text-align: right;">2.791</td>
+<td>Suroriente</td>
+<td style="text-align: right;">78</td>
 <td style="text-align: right;">0,45</td>
-<td style="text-align: right;">0,09</td>
-<td style="text-align: right;">10,50</td>
-<td style="text-align: right;">0,52</td>
-<td style="text-align: right;">-0,04</td>
-<td style="text-align: right;">1,18</td>
-<td style="text-align: right;">55,75%</td>
-<td style="text-align: right;">42,10%</td>
-</tr>
-<tr class="odd">
-<td>Punta Arenas</td>
-<td style="text-align: right;">3.072</td>
-<td style="text-align: right;">0,52</td>
-<td style="text-align: right;">0,66</td>
-<td style="text-align: right;">0,52</td>
-<td style="text-align: right;">0,56</td>
-<td style="text-align: right;">0,03</td>
-<td style="text-align: right;">1,29</td>
-<td style="text-align: right;">47,72%</td>
-<td style="text-align: right;">50,00%</td>
+<td style="text-align: right;">0,23</td>
+<td style="text-align: right;">3,39</td>
+<td style="text-align: right;">0,49</td>
+<td style="text-align: right;">-0,03</td>
+<td style="text-align: right;">0,89</td>
+<td style="text-align: right;">43,59%</td>
+<td style="text-align: right;">35,90%</td>
 </tr>
 <tr class="even">
-<td>Laguna Blanca</td>
-<td style="text-align: right;">434</td>
-<td style="text-align: right;">0,93</td>
+<td>Nororiente</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: right;">0,70</td>
 <td style="text-align: right;">1,00</td>
 <td style="text-align: right;">0,00</td>
-<td style="text-align: right;">1,01</td>
-<td style="text-align: right;">0,06</td>
+<td style="text-align: right;">0,54</td>
+<td style="text-align: right;">-0,17</td>
 <td style="text-align: right;">0,00</td>
-<td style="text-align: right;">5,99%</td>
-<td style="text-align: right;">91,71%</td>
+<td style="text-align: right;">26,21%</td>
+<td style="text-align: right;">65,05%</td>
 </tr>
 <tr class="odd">
-<td>Porvenir</td>
-<td style="text-align: right;">959</td>
-<td style="text-align: right;">0,92</td>
-<td style="text-align: right;">1,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,66</td>
-<td style="text-align: right;">0,01</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">6,78%</td>
-<td style="text-align: right;">91,24%</td>
-</tr>
-<tr class="even">
-<td>Primavera</td>
-<td style="text-align: right;">575</td>
-<td style="text-align: right;">0,92</td>
+<td>Surponiente</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">0,67</td>
 <td style="text-align: right;">1,00</td>
 <td style="text-align: right;">0,00</td>
 <td style="text-align: right;">0,59</td>
-<td style="text-align: right;">0,02</td>
 <td style="text-align: right;">0,00</td>
-<td style="text-align: right;">6,96%</td>
-<td style="text-align: right;">90,43%</td>
-</tr>
-<tr class="odd">
-<td>San Gregorio</td>
-<td style="text-align: right;">876</td>
-<td style="text-align: right;">0,89</td>
-<td style="text-align: right;">1,00</td>
 <td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,72</td>
-<td style="text-align: right;">0,03</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">9,59%</td>
-<td style="text-align: right;">87,67%</td>
+<td style="text-align: right;">27,45%</td>
+<td style="text-align: right;">60,78%</td>
 </tr>
 <tr class="even">
-<td>Timaukel</td>
-<td style="text-align: right;">1.559</td>
-<td style="text-align: right;">0,54</td>
+<td>Norponiente</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">0,84</td>
 <td style="text-align: right;">1,00</td>
 <td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,55</td>
-<td style="text-align: right;">-0,02</td>
-<td style="text-align: right;">0,74</td>
-<td style="text-align: right;">46,57%</td>
-<td style="text-align: right;">50,67%</td>
+<td style="text-align: right;">0,46</td>
+<td style="text-align: right;">0,01</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">11,54%</td>
+<td style="text-align: right;">79,49%</td>
 </tr>
 </tbody>
 </table>
@@ -904,14 +842,24 @@ Table&nbsp;10.5: Comparación comunal de resultados MRCT para 2025.
 <div id="fig-res-mediana-comunal-resultados" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-res-mediana-comunal-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/resultados/res_mediana_comunal_2025.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+<img src="images/resultados_rms/MRCT_Analisis_Resultados_20_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-res-mediana-comunal-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10.4: Resiliencia mediana por comuna en 2025. Las barras muestran la mediana y el rango P10-P90 de las cuencas internas.
+Figure&nbsp;10.4: Resiliencia mediana por macrozona MRCT en 2025. Las barras muestran la mediana y el rango P10-P90 de las cuencas internas.
 </figcaption>
 </figure>
 </div>
-<p>La tabla muestra dos patrones relevantes. Primero, Puerto Natales concentra el mayor número de cuencas evaluadas, con 8.574 unidades, lo que exige interpretar sus promedios junto con percentiles y mapas. Segundo, varias comunas tienen mediana igual a 1,00, pero no por eso carecen de cuencas críticas: Timaukel, por ejemplo, combina mediana alta con <strong>46,57%</strong> de cuencas en <code>Colapso_Potencial</code>, lo que revela una distribución interna fuertemente polarizada.</p>
+<div id="fig-mapa-macrozonas-resultados" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-mapa-macrozonas-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/resultados_rms/MRCT_Analisis_Resultados_22_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-mapa-macrozonas-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.5: Mapa de resiliencia mediana por macrozona MRCT en 2025.
+</figcaption>
+</figure>
+</div>
+<p>La tabla muestra dos patrones relevantes. Primero, Suroriente concentra la señal territorial más crítica por mediana de resiliencia y porcentaje de colapso potencial. Segundo, las macrozonas con mediana igual a 1,00 no están libres de cuencas críticas: Nororiente y Surponiente tienen más de una cuarta parte de sus cuencas en <code>Colapso_Potencial</code>.</p>
 </section>
 <section id="sec-componentes-explicativos-resultados" class="level2 page-columns page-full" data-number="10.5">
 <h2 data-number="10.5" class="anchored" data-anchor-id="sec-componentes-explicativos-resultados"><span class="header-section-number">10.5</span> Componentes explicativos</h2>
@@ -919,10 +867,10 @@ Figure&nbsp;10.4: Resiliencia mediana por comuna en 2025. Las barras muestran la
 <div id="fig-drivers-pt-resultados" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-drivers-pt-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/resultados/drivers_pt_2025.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+<img src="images/resultados_rms/MRCT_Analisis_Resultados_25_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-drivers-pt-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10.5: Descomposición regional del Potencial de Transición y driver dominante por cuenca en 2025.
+Figure&nbsp;10.6: Descomposición regional del Potencial de Transición y driver dominante por cuenca en 2025.
 </figcaption>
 </figure>
 </div>
@@ -935,94 +883,94 @@ Figure&nbsp;10.5: Descomposición regional del Potencial de Transición y driver
 </ul>
 <p>La combinación de estos componentes evita una interpretación excesivamente simple. Dos cuencas pueden tener <code>RES</code> bajo, pero una estar en degradación activa, otra en recuperación ecológica y otra en transición sin velocidad disponible para el año más reciente. Por eso la priorización territorial debe considerar simultáneamente <code>RES_STATE</code>, <code>RES_TYPE</code>, <span class="math inline">D</span>, <span class="math inline">V</span>, <span class="math inline">SENS</span> y <span class="math inline">D_{local}</span>.</p>
 </section>
-<section id="sec-punta-arenas-resultados" class="level2 page-columns page-full" data-number="10.6">
-<h2 data-number="10.6" class="anchored" data-anchor-id="sec-punta-arenas-resultados"><span class="header-section-number">10.6</span> Doble clic sobre Punta Arenas</h2>
-<p>Punta Arenas concentra población, infraestructura, servicios regionales y una parte importante de las decisiones territoriales de Magallanes. En la MRCT 2025, la comuna incluye <strong>3.072 cuencas</strong>, con una superficie total aproximada de <strong>17.402,9 km²</strong> y <strong>39.936 registros</strong> en el período 2013-2025.</p>
-<p>La mediana comunal de <code>RES</code> es <strong>0,664</strong>, superior a la mediana regional. Sin embargo, esta cifra esconde una división interna fuerte: <strong>1.536 cuencas</strong> están en <code>Alta_Resiliencia</code>, mientras <strong>1.466 cuencas</strong> aparecen en <code>Colapso_Potencial</code>. Es decir, Punta Arenas no debe leerse como un promedio comunal homogéneo, sino como un territorio con contrastes internos relevantes.</p>
-<div id="tbl-punta-arenas-perfil" class="quarto-float quarto-figure quarto-figure-center anchored">
+<section id="sec-area-central-resultados" class="level2 page-columns page-full" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="sec-area-central-resultados"><span class="header-section-number">10.6</span> Doble clic sobre el área central metropolitana</h2>
+<p>El área central metropolitana concentra población, infraestructura, servicios regionales y gran parte de las decisiones territoriales de la Región Metropolitana. En la MRCT 2025, el subconjunto de 50 km alrededor del centro de Santiago incluye <strong>193 cuencas</strong>, con una superficie total aproximada de <strong>7.898,4 km²</strong> y <strong>2.509 registros</strong> en el período 2013-2025.</p>
+<p>La mediana del área central de <code>RES</code> es <strong>1,000</strong>, superior a la media regional. Sin embargo, esta cifra esconde contrastes internos: <strong>144 cuencas</strong> están en <code>Alta_Resiliencia</code>, mientras <strong>35 cuencas</strong> aparecen en <code>Colapso_Potencial</code>. La zona central no debe leerse como un promedio homogéneo, sino como un territorio donde coexisten cuencas muy resilientes con focos críticos de baja resiliencia.</p>
+<div id="tbl-area-central-perfil" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-punta-arenas-perfil-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;10.6: Perfil comunal de Punta Arenas en 2025.
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-area-central-perfil-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;10.6: Perfil del área central metropolitana en 2025.
 </figcaption>
-<div aria-describedby="tbl-punta-arenas-perfil-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="tbl-area-central-perfil-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Indicador Punta Arenas 2025</th>
+<th>Indicador área central RMS 2025</th>
 <th style="text-align: right;">Valor</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Cuencas evaluadas</td>
-<td style="text-align: right;">3.072</td>
+<td style="text-align: right;">193</td>
 </tr>
 <tr class="even">
 <td>Superficie total aproximada</td>
-<td style="text-align: right;">17.402,9 km²</td>
+<td style="text-align: right;">7.898,4 km²</td>
 </tr>
 <tr class="odd">
 <td><code>RES</code> media</td>
-<td style="text-align: right;">0,520</td>
+<td style="text-align: right;">0,787</td>
 </tr>
 <tr class="even">
 <td><code>RES</code> mediana</td>
-<td style="text-align: right;">0,664</td>
+<td style="text-align: right;">1,000</td>
 </tr>
 <tr class="odd">
 <td>Cuencas en <code>Alta_Resiliencia</code></td>
-<td style="text-align: right;">1.536</td>
+<td style="text-align: right;">144</td>
 </tr>
 <tr class="even">
 <td>Cuencas en <code>Colapso_Potencial</code></td>
-<td style="text-align: right;">1.466</td>
+<td style="text-align: right;">35</td>
 </tr>
 <tr class="odd">
 <td>Cuencas en <code>Resiliencia_Baja</code></td>
-<td style="text-align: right;">35</td>
+<td style="text-align: right;">5</td>
 </tr>
 <tr class="even">
 <td>Cuencas en <code>Resiliencia_Media</code></td>
-<td style="text-align: right;">35</td>
+<td style="text-align: right;">9</td>
 </tr>
 <tr class="odd">
 <td>Cuencas en <code>Transicion</code></td>
-<td style="text-align: right;">2.109</td>
+<td style="text-align: right;">150</td>
 </tr>
 <tr class="even">
-<td>Cuencas en <code>Degradacion_Activa</code></td>
-<td style="text-align: right;">194</td>
+<td>Cuencas en <code>Resiliencia_Estable</code></td>
+<td style="text-align: right;">25</td>
 </tr>
 <tr class="odd">
 <td>Cuencas en <code>Zona_Apta</code></td>
-<td style="text-align: right;">2.974</td>
+<td style="text-align: right;">161</td>
 </tr>
 <tr class="even">
 <td>Cuencas en <code>Zona_No_Apta</code></td>
-<td style="text-align: right;">30</td>
+<td style="text-align: right;">8</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<div id="fig-punta-arenas-mapas-resultados" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
+<div id="fig-area-central-mapas-resultados" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
-<div aria-describedby="fig-punta-arenas-mapas-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/resultados/punta_arenas_mapas_mrct_2025.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+<div aria-describedby="fig-area-central-mapas-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/resultados_rms/MRCT_Analisis_Resultados_30_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
 </div>
-<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-punta-arenas-mapas-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10.6: Mapas de detalle para Punta Arenas: <code>RES</code>, <span class="math inline">PT</span>, <span class="math inline">D</span> y <code>RES_GRAD</code> en 2025.
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-area-central-mapas-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.7: Mapas de detalle para el área central RMS: <code>RES</code>, <span class="math inline">PT</span>, velocidad y componentes explicativos en 2025.
 </figcaption>
 </figure>
 </div>
-<p>El ranking interno de cuencas prioritarias de Punta Arenas fue construido combinando <span class="math inline">PT</span>, bajo <code>RES</code> y velocidad alta. La mayoría de los casos priorizados están en <code>Zona_Apta</code>, lo que los vuelve especialmente útiles para validación territorial porque combinan señal crítica y factibilidad de revisión.</p>
-<div id="tbl-punta-arenas-prioritarias" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>El ranking interno de cuencas prioritarias del área central fue construido combinando <span class="math inline">PT</span>, bajo <code>RES</code> y velocidad alta. La mayoría de los casos priorizados se ubica en <code>Colapso_Potencial</code>, pero difieren en zona de decisión, tipo de resiliencia y trayectoria.</p>
+<div id="tbl-area-central-prioritarias" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-punta-arenas-prioritarias-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;10.7: Diez cuencas prioritarias de Punta Arenas según score crítico 2025.
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-area-central-prioritarias-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;10.7: Diez cuencas prioritarias del área central RMS según score crítico 2025.
 </figcaption>
-<div aria-describedby="tbl-punta-arenas-prioritarias-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="tbl-area-central-prioritarias-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 10%">
@@ -1053,156 +1001,156 @@ Table&nbsp;10.7: Diez cuencas prioritarias de Punta Arenas según score crítico
 <tbody>
 <tr class="odd">
 <td style="text-align: right;">1</td>
-<td style="text-align: right;">1175</td>
-<td style="text-align: right;">0,0002</td>
-<td style="text-align: right;">5.743,09</td>
-<td style="text-align: right;">1,68</td>
-<td style="text-align: right;">1,27</td>
-<td style="text-align: right;">0,82</td>
-<td style="text-align: right;">1.656,77</td>
-<td>Degradacion_Activa</td>
-<td>Zona_Apta</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: right;">0,0073</td>
+<td style="text-align: right;">135,9236</td>
+<td style="text-align: right;">0,8769</td>
+<td style="text-align: right;">-0,4920</td>
+<td style="text-align: right;">1,2673</td>
+<td style="text-align: right;">89,6399</td>
+<td>Resiliencia_Estable</td>
+<td>Zona_Mitigacion</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">2</td>
-<td style="text-align: right;">2257</td>
-<td style="text-align: right;">0,0000</td>
-<td style="text-align: right;">27.953,16</td>
-<td style="text-align: right;">1,08</td>
-<td style="text-align: right;">-1,07</td>
-<td style="text-align: right;">11,86</td>
-<td style="text-align: right;">1.950,39</td>
-<td>Recuperacion_Ecologica</td>
-<td>Zona_Apta</td>
+<td style="text-align: right;">195</td>
+<td style="text-align: right;">0,0054</td>
+<td style="text-align: right;">184,5536</td>
+<td style="text-align: right;">0,4710</td>
+<td style="text-align: right;">-0,2361</td>
+<td style="text-align: right;">1,1708</td>
+<td style="text-align: right;">290,0875</td>
+<td>Resiliencia_Estable</td>
+<td>Zona_Mitigacion</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">3</td>
-<td style="text-align: right;">203</td>
-<td style="text-align: right;">0,0001</td>
-<td style="text-align: right;">15.552,58</td>
-<td style="text-align: right;">1,51</td>
-<td style="text-align: right;">1,03</td>
-<td style="text-align: right;">22,40</td>
-<td style="text-align: right;">430,90</td>
-<td>Degradacion_Activa</td>
-<td>Zona_Apta</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">0,0174</td>
+<td style="text-align: right;">56,6367</td>
+<td style="text-align: right;">0,8026</td>
+<td style="text-align: right;">-0,3594</td>
+<td style="text-align: right;">0,4459</td>
+<td style="text-align: right;">69,8067</td>
+<td>Resiliencia_Estable</td>
+<td>Zona_Condicionada</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">4</td>
-<td style="text-align: right;">1265</td>
-<td style="text-align: right;">0,0004</td>
-<td style="text-align: right;">2.317,18</td>
-<td style="text-align: right;">2,29</td>
-<td style="text-align: right;">1,58</td>
-<td style="text-align: right;">8,19</td>
-<td style="text-align: right;">83,13</td>
-<td>Degradacion_Activa</td>
-<td>Zona_Apta</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: right;">0,0221</td>
+<td style="text-align: right;">44,3444</td>
+<td style="text-align: right;">0,9530</td>
+<td style="text-align: right;">-0,5317</td>
+<td style="text-align: right;">0,7372</td>
+<td style="text-align: right;">32,9756</td>
+<td>Resiliencia_Estable</td>
+<td>Zona_Condicionada</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">5</td>
-<td style="text-align: right;">1493</td>
-<td style="text-align: right;">0,0005</td>
-<td style="text-align: right;">2.047,66</td>
-<td style="text-align: right;">4,62</td>
-<td style="text-align: right;">4,23</td>
-<td style="text-align: right;">0,97</td>
-<td style="text-align: right;">83,91</td>
-<td>Degradacion_Activa</td>
-<td>Zona_Apta</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0,0145</td>
+<td style="text-align: right;">67,9749</td>
+<td style="text-align: right;">0,6430</td>
+<td style="text-align: right;">-0,1303</td>
+<td style="text-align: right;">0,5427</td>
+<td style="text-align: right;">119,2632</td>
+<td>Resiliencia_Estable</td>
+<td>Zona_Condicionada</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">6</td>
-<td style="text-align: right;">301</td>
-<td style="text-align: right;">0,0002</td>
-<td style="text-align: right;">4.077,71</td>
-<td style="text-align: right;">1,19</td>
-<td style="text-align: right;">-1,12</td>
-<td style="text-align: right;">17,57</td>
-<td style="text-align: right;">171,69</td>
-<td>Recuperacion_Ecologica</td>
-<td>Zona_Apta</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">2265</td>
-<td style="text-align: right;">0,0005</td>
-<td style="text-align: right;">2.205,63</td>
-<td style="text-align: right;">1,32</td>
-<td style="text-align: right;">-1,29</td>
-<td style="text-align: right;">7,82</td>
-<td style="text-align: right;">163,12</td>
-<td>Recuperacion_Ecologica</td>
-<td>Zona_Apta</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">255</td>
-<td style="text-align: right;">0,0003</td>
-<td style="text-align: right;">3.978,27</td>
-<td style="text-align: right;">0,50</td>
-<td style="text-align: right;">-1,10</td>
-<td style="text-align: right;">12,58</td>
-<td style="text-align: right;">552,98</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">0,0199</td>
+<td style="text-align: right;">49,2043</td>
+<td style="text-align: right;">0,5383</td>
+<td style="text-align: right;">-0,1281</td>
+<td style="text-align: right;">0,8546</td>
+<td style="text-align: right;">85,3675</td>
 <td>Resiliencia_Estable</td>
 <td>Zona_Apta</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">452</td>
-<td style="text-align: right;">0,0005</td>
-<td style="text-align: right;">2.164,00</td>
-<td style="text-align: right;">1,63</td>
-<td style="text-align: right;">1,23</td>
-<td style="text-align: right;">10,87</td>
-<td style="text-align: right;">98,45</td>
-<td>Degradacion_Activa</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">0,0260</td>
+<td style="text-align: right;">37,4050</td>
+<td style="text-align: right;">0,6311</td>
+<td style="text-align: right;">0,2092</td>
+<td style="text-align: right;">0,3829</td>
+<td style="text-align: right;">68,8951</td>
+<td>Resiliencia_Tensionada</td>
 <td>Zona_Apta</td>
 </tr>
 <tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">117</td>
+<td style="text-align: right;">0,0488</td>
+<td style="text-align: right;">19,4872</td>
+<td style="text-align: right;">0,5767</td>
+<td style="text-align: right;">-0,2517</td>
+<td style="text-align: right;">1,5859</td>
+<td style="text-align: right;">18,8782</td>
+<td>Resiliencia_Estable</td>
+<td>Zona_Condicionada</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">353</td>
+<td style="text-align: right;">0,0175</td>
+<td style="text-align: right;">56,1498</td>
+<td style="text-align: right;">0,5308</td>
+<td style="text-align: right;">0,0452</td>
+<td style="text-align: right;">1,0852</td>
+<td style="text-align: right;">95,0705</td>
+<td>Resiliencia_Tensionada</td>
+<td>Zona_Condicionada</td>
+</tr>
+<tr class="even">
 <td style="text-align: right;">10</td>
-<td style="text-align: right;">250</td>
-<td style="text-align: right;">0,0004</td>
-<td style="text-align: right;">2.772,57</td>
-<td style="text-align: right;">1,70</td>
-<td style="text-align: right;">1,13</td>
-<td style="text-align: right;">3,52</td>
-<td style="text-align: right;">337,98</td>
-<td>Degradacion_Activa</td>
-<td>Zona_Apta</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">0,1683</td>
+<td style="text-align: right;">4,9412</td>
+<td style="text-align: right;">0,5363</td>
+<td style="text-align: right;">-0,4417</td>
+<td style="text-align: right;">1,7948</td>
+<td style="text-align: right;">2,5731</td>
+<td>Resiliencia_Estable</td>
+<td>Zona_Condicionada</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<div id="fig-punta-arenas-series-resultados" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
+<div id="fig-area-central-series-resultados" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
-<div aria-describedby="fig-punta-arenas-series-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/resultados/punta_arenas_series_prioritarias.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+<div aria-describedby="fig-area-central-series-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/resultados_rms/MRCT_Analisis_Resultados_32_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
 </div>
-<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-punta-arenas-series-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10.7: Series temporales de cuencas prioritarias de Punta Arenas.
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-area-central-series-resultados-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.8: Series temporales de cuencas prioritarias del área central RMS.
 </figcaption>
 </figure>
 </div>
-<p>La tabla muestra que no todas las cuencas críticas tienen la misma trayectoria. Algunas están clasificadas como <code>Degradacion_Activa</code>, con velocidad positiva y alejamiento del dominio. Otras aparecen como <code>Recuperacion_Ecologica</code>, con velocidad negativa, lo que sugiere retorno relativo aunque mantengan baja resiliencia operativa. Este contraste es clave para terreno: la validación no debe buscar sólo deterioro, sino también casos donde la matriz detecta recuperación o reversión.</p>
+<p>La tabla muestra que no todas las cuencas críticas tienen la misma trayectoria. Algunas están clasificadas como <code>Resiliencia_Tensionada</code>, con velocidad positiva y alejamiento del dominio. Otras aparecen como <code>Resiliencia_Estable</code>, con velocidad negativa, lo que sugiere recuperación relativa aunque mantengan baja resiliencia operativa. Este contraste es clave para validación territorial: la revisión no debe buscar sólo deterioro, sino también casos donde la matriz detecta recuperación o reversión.</p>
 </section>
 <section id="sec-sintesis-resultados" class="level2 page-columns page-full" data-number="10.7">
 <h2 data-number="10.7" class="anchored" data-anchor-id="sec-sintesis-resultados"><span class="header-section-number">10.7</span> Síntesis de hallazgos</h2>
 <p>Los resultados de 2025 permiten ordenar cinco hallazgos principales.</p>
-<p>Primero, la región presenta una distribución polarizada. La mediana de <code>RES</code> es baja, pero existe una proporción relevante de cuencas con alta resiliencia. Esto obliga a leer el territorio con percentiles, mapas y tipologías, no sólo con promedios.</p>
-<p>Segundo, el <span class="math inline">PT</span> es altamente asimétrico. Un grupo pequeño de cuencas concentra valores extremos, por lo que la escala logarítmica es necesaria para visualización, pero las decisiones deben revisar los valores originales.</p>
-<p>Tercero, la comparación comunal distingue tres grupos: comunas con baja mediana de resiliencia, como Río Verde, Torres del Paine y Puerto Natales; comunas con resiliencia alta dominante, como Laguna Blanca, Porvenir, Primavera y San Gregorio; y comunas polarizadas, como Punta Arenas y Timaukel.</p>
-<p>Cuarto, Punta Arenas requiere una lectura interna. Su mediana comunal es relativamente alta, pero casi la mitad de sus cuencas aparece en <code>Colapso_Potencial</code>. La selección de cuencas prioritarias muestra casos tanto de degradación activa como de recuperación ecológica.</p>
+<p>Primero, la región presenta una distribución polarizada. La mediana de <code>RES</code> es alta, pero un 27,1% de las cuencas aparece en <code>Colapso_Potencial</code>. Esto obliga a leer el territorio con percentiles, mapas y tipologías, no sólo con promedios.</p>
+<p>Segundo, el <span class="math inline">PT</span> es altamente asimétrico. La mediana regional es 0,000, pero un grupo pequeño de cuencas concentra valores extremos, por lo que la escala logarítmica es necesaria para visualización y las decisiones deben revisar los valores originales.</p>
+<p>Tercero, la comparación por macrozona distingue una señal crítica clara en Suroriente, que combina menor mediana de resiliencia y mayor proporción relativa de colapso potencial. Nororiente y Surponiente también requieren atención porque, pese a tener mediana alta, contienen subconjuntos críticos.</p>
+<p>Cuarto, el área central RMS requiere una lectura interna. Su mediana de resiliencia es alta, pero 35 cuencas aparecen en <code>Colapso_Potencial</code> y 8 quedan en <code>Zona_No_Apta</code>. La selección de cuencas prioritarias muestra casos de baja resiliencia con distintas trayectorias y zonas de decisión.</p>
 <p>Quinto, la MRCT funciona mejor como sistema de preguntas que como sentencia única. Los resultados permiten priorizar dónde mirar, qué cuencas revisar, qué trayectorias contrastar y qué hipótesis llevar a validación territorial.</p>
 <div id="fig-sintesis-resultados-mrct" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-sintesis-resultados-mrct-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/resultados/sintesis_resultados_mrct_2025.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+<img src="images/resultados_rms/MRCT_Analisis_Resultados_37_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-sintesis-resultados-mrct-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10.8: Síntesis visual de resultados MRCT 2025 para la Región de Magallanes.
+Figure&nbsp;10.9: Síntesis visual de resultados MRCT 2025 para la Región Metropolitana de Santiago.
 </figcaption>
 </figure>
 </div>
@@ -1211,19 +1159,18 @@ Figure&nbsp;10.8: Síntesis visual de resultados MRCT 2025 para la Región de Ma
 <h2 data-number="10.8" class="anchored" data-anchor-id="sec-preguntas-validacion-resultados"><span class="header-section-number">10.8</span> Preguntas para validación territorial</h2>
 <p>A partir de estos resultados, se proponen cinco preguntas para trabajo posterior:</p>
 <ul>
-<li>¿las cuencas en <code>Colapso_Potencial</code> coinciden con áreas de alta presión antrópica o con condiciones ecosistémicas particulares?;</li>
-<li>¿los años con mayor jerk corresponden a eventos climáticos, hidrológicos o de cobertura documentados?;</li>
-<li>¿las cuencas prioritarias de Punta Arenas son urbanas, periurbanas o rurales, y qué tan factible es visitarlas?;</li>
-<li>¿la sensibilidad climática <span class="math inline">SENS</span> refleja gradientes regionales de aridez, albedo o temperatura de brillo?;</li>
-<li>¿los gradientes de <code>RES_GRAD</code> identifican discontinuidades espaciales que puedan validarse con observación de terreno?</li>
+<li>¿las cuencas en <code>Colapso_Potencial</code> coinciden con áreas de alta presión antrópica urbana, periurbana o cordillerana?;</li>
+<li>¿los años con mayor jerk corresponden a eventos climáticos, hidrológicos o de cobertura documentados en la Región Metropolitana?;</li>
+<li>¿las cuencas prioritarias del área central RMS son urbanas, periurbanas o rurales, y qué tan factible es visitarlas?;</li>
+<li>¿la sensibilidad climática <span class="math inline">SENS</span> refleja gradientes regionales de aridez, albedo, nieve o temperatura de brillo?;</li>
+<li>¿los gradientes de <code>RES_GRAD</code> identifican discontinuidades espaciales que puedan validarse con observación territorial?</li>
 </ul>
 </section>
 <section id="sec-notas-resultados" class="level2" data-number="10.9">
 <h2 data-number="10.9" class="anchored" data-anchor-id="sec-notas-resultados"><span class="header-section-number">10.9</span> Notas metodológicas</h2>
-<p>La MRCT opera sobre cuencas hidrográficas, no sobre límites administrativos. La agregación comunal usa la asignación <code>CUT_COM</code> disponible en la capa espacial, por lo que las comunas con muchas cuencas pequeñas pueden mostrar mayor varianza interna que comunas con pocas cuencas grandes.</p>
+<p>La MRCT opera sobre cuencas hidrográficas, no sobre límites administrativos. En esta versión RMS, la agregación territorial usa macrozonas MRCT derivadas desde centroides de cuenca, debido a que los productos disponibles no incluyen <code>CUT_COM</code>. Esta división es reproducible, pero no debe interpretarse como equivalente a comunas, provincias o áreas funcionales oficiales.</p>
 <p>El <span class="math inline">PT</span> tiene una distribución muy asimétrica. Para visualizaciones se usa <code>log1p(PT)</code>, pero las tablas mantienen los valores originales. Las cuencas con <span class="math inline">PT = 0</span> corresponden a casos donde <span class="math inline">D</span>, <span class="math inline">V</span>, <span class="math inline">SENS</span> y <span class="math inline">D_{local}</span> no amplifican presión de transición bajo la configuración del modelo.</p>
 <p>La línea base del dominio corresponde al período <strong>2013-2022</strong>. Los años <strong>2023-2025</strong> son años de evaluación posterior respecto de esa referencia. Un aumento de <span class="math inline">D</span> indica alejamiento del régimen de referencia, pero no prueba por sí solo causalidad ecológica.</p>
-<p>Finalmente, <code>RES_STATE</code> indica nivel de resiliencia operativa, mientras <code>RES_TYPE</code>, <span class="math inline">V</span>, <span class="math inline">A</span> y <span class="math inline">J</span> ayudan a leer trayectoria. La interpretación territorial debe integrar ambas dimensiones antes de definir prioridades de monitoreo, validación o gestión.</p>
 
 
 </section>
