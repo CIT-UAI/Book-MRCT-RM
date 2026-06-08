@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>12&nbsp; Selección de Cuencas – Guía Técnica MRCT</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./planificacion_terreno.html" rel="next">
+<link href="./trabajo_terreno.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-485d01fc63b59abcd3ee1bf1e8e2748d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="nav-sidebar floating slimcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./trabajo_terreno.html">Trabajo en Terreno</a></li><li class="breadcrumb-item"><a href="./jerk.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Selección de Cuencas</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Guía Técnica MRCT</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefacio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introducción</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./region_estudio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Región de estudio y unidades de análisis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./insumos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Insumos satelitales e índices espectrales</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./inds_base.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Indicadores Base</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vector_es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Vector de Estado</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./trayectoria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Trayectoria del estado</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./integracion_espacial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Integración Territorial</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sensibilidad.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Sensibilidad del Sistema</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pt_resiliencia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Potencial de Transición y Resiliencia</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resultados.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Análisis de Resultados</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./conclusiones.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Conclusiones</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./trabajo_terreno.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Trabajo en Terreno</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./jerk.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Selección de Cuencas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./planificacion_terreno.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Planificación de Campaña</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./protocolo_levantamiento.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Protocolo de Levantamiento</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fichas_cuencas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Fichas de Cuencas</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./resultados_terreno.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Resultados de Terreno</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./integracion_validacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Integración y Validación</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Bibliografía</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./anexos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Anexos</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="1">
+    <h2 id="toc-title">Contenidos</h2>
+   
+  <ul>
+  <li><a href="#sec-pregunta-jerk-terreno" id="toc-sec-pregunta-jerk-terreno" class="nav-link active" data-scroll-target="#sec-pregunta-jerk-terreno"><span class="header-section-number">12.1</span> Pregunta de trabajo</a></li>
+  <li><a href="#sec-criterio-jerk" id="toc-sec-criterio-jerk" class="nav-link" data-scroll-target="#sec-criterio-jerk"><span class="header-section-number">12.2</span> Qué mide el jerk</a></li>
+  <li><a href="#sec-estructura-datos-jerk" id="toc-sec-estructura-datos-jerk" class="nav-link" data-scroll-target="#sec-estructura-datos-jerk"><span class="header-section-number">12.3</span> Insumos y base analítica</a></li>
+  <li><a href="#sec-control-calidad-jerk" id="toc-sec-control-calidad-jerk" class="nav-link" data-scroll-target="#sec-control-calidad-jerk"><span class="header-section-number">12.4</span> Control de calidad y cobertura</a></li>
+  <li><a href="#sec-eventos-jerk" id="toc-sec-eventos-jerk" class="nav-link" data-scroll-target="#sec-eventos-jerk"><span class="header-section-number">12.5</span> Eventos extremos de jerk</a></li>
+  <li><a href="#sec-cruce-territorial-jerk" id="toc-sec-cruce-territorial-jerk" class="nav-link" data-scroll-target="#sec-cruce-territorial-jerk"><span class="header-section-number">12.6</span> Buffer operacional de Santiago centro</a></li>
+  <li><a href="#sec-puntaje-jerk" id="toc-sec-puntaje-jerk" class="nav-link" data-scroll-target="#sec-puntaje-jerk"><span class="header-section-number">12.7</span> Puntaje de priorización</a></li>
+  <li><a href="#sec-diez-cuencas-jerk" id="toc-sec-diez-cuencas-jerk" class="nav-link" data-scroll-target="#sec-diez-cuencas-jerk"><span class="header-section-number">12.8</span> Diez cuencas candidatas</a></li>
+  <li><a href="#sec-series-temporales-jerk" id="toc-sec-series-temporales-jerk" class="nav-link" data-scroll-target="#sec-series-temporales-jerk"><span class="header-section-number">12.9</span> Lectura de series temporales</a></li>
+  <li><a href="#sec-puntos-estrategicos-rms" id="toc-sec-puntos-estrategicos-rms" class="nav-link" data-scroll-target="#sec-puntos-estrategicos-rms"><span class="header-section-number">12.10</span> Puntos estratégicos RMS</a></li>
+  <li><a href="#sec-uso-terreno-jerk" id="toc-sec-uso-terreno-jerk" class="nav-link" data-scroll-target="#sec-uso-terreno-jerk"><span class="header-section-number">12.11</span> Uso en planificación territorial</a></li>
+  <li><a href="#sec-fichas-jerk" id="toc-sec-fichas-jerk" class="nav-link" data-scroll-target="#sec-fichas-jerk"><span class="header-section-number">12.12</span> Fichas de terreno derivadas</a></li>
+  <li><a href="#sec-productos-jerk" id="toc-sec-productos-jerk" class="nav-link" data-scroll-target="#sec-productos-jerk"><span class="header-section-number">12.13</span> Productos exportados</a></li>
+  <li><a href="#sec-limitaciones-jerk" id="toc-sec-limitaciones-jerk" class="nav-link" data-scroll-target="#sec-limitaciones-jerk"><span class="header-section-number">12.14</span> Limitaciones</a></li>
+  <li><a href="#sec-cierre-jerk" id="toc-sec-cierre-jerk" class="nav-link" data-scroll-target="#sec-cierre-jerk"><span class="header-section-number">12.15</span> Cierre operativo</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./trabajo_terreno.html">Trabajo en Terreno</a></li><li class="breadcrumb-item"><a href="./jerk.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Selección de Cuencas</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Selección de Cuencas</span></h1>
+<p class="subtitle lead">Priorización para validación territorial mediante análisis de jerk</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Este capítulo actualiza la selección de cuencas candidatas para validación territorial mediante el análisis de <strong>jerk</strong> de la Matriz de Resiliencia Climática Territorial. El objetivo es detectar cambios abruptos en la trayectoria ecosistémica y concentrar la priorización en el entorno operativo del centro metropolitano de Santiago.</p>
+<p>La versión actual corresponde a la Región Metropolitana de Santiago. Además de seleccionar cuencas dentro de un buffer adaptativo alrededor del centro de Santiago, agrega una lectura por <strong>puntos estratégicos RMS</strong>: Santiago centro, Tiltil y San José de Maipo. Esta capa permite observar cuencas con cambios abruptos cerca de territorios relevantes para planificación urbana, presión logística-industrial y sensibilidad hídrica cordillerana.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Alcance de la selección
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La lista de cuencas prioritarias es una <strong>preselección técnica</strong>. No equivale a una ruta final de terreno ni a una evaluación de impacto ambiental. Antes de definir una campaña deben revisarse accesos reales, permisos, seguridad, propiedad, restricciones operativas, pertinencia territorial y conocimiento local.</p>
+</div>
+</div>
+<section id="sec-pregunta-jerk-terreno" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="sec-pregunta-jerk-terreno"><span class="header-section-number">12.1</span> Pregunta de trabajo</h2>
+<p>La pregunta que orienta esta versión del análisis es:</p>
+<blockquote class="blockquote">
+<p>¿Qué cuencas del entorno metropolitano de Santiago muestran cambios abruptos recientes en su trayectoria ecosistémica, y cuáles de ellas se relacionan espacialmente con puntos estratégicos de la Región Metropolitana?</p>
+</blockquote>
+<p>La pregunta se separa en cinco componentes:</p>
+<ul>
+<li>Identificar eventos abruptos medidos por jerk en la serie MRCT 2013-2025;</li>
+<li>distinguir entre intensificación y reversión de la trayectoria;</li>
+<li>filtrar cuencas dentro de un área operacional definida desde Santiago centro;</li>
+<li>ordenar las candidatas mediante un puntaje compuesto robusto a valores extremos;</li>
+<li>revisar cuencas cercanas a Santiago centro, Tiltil y San José de Maipo.</li>
+</ul>
+</section>
+<section id="sec-criterio-jerk" class="level2 page-columns page-full" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="sec-criterio-jerk"><span class="header-section-number">12.2</span> Qué mide el jerk</h2>
+<p>La MRCT calcula para cada cuenca y año una variable de dominio, <code>Domain</code> o <span class="math inline">D</span>, que representa la distancia de la cuenca respecto de su estado ecosistémico de referencia. A partir de esa trayectoria se calculan derivadas temporales:</p>
+<ul>
+<li><span class="math inline">D</span>: distancia al régimen de referencia;</li>
+<li><span class="math inline">V</span>: velocidad de cambio de esa distancia;</li>
+<li><span class="math inline">A</span>: aceleración del cambio;</li>
+<li><span class="math inline">J</span>: cambio de la aceleración, o jerk.</li>
+</ul>
+<p>En términos operativos, el jerk identifica una ruptura en la dinámica. Un valor alto en magnitud indica que la cuenca experimentó un salto abrupto en su trayectoria. Esa señal no debe interpretarse automáticamente como degradación, recuperación o causalidad comprobada: funciona como una alerta para mirar con mayor detalle.</p>
+<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-derivadas-jerk" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-derivadas-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-derivadas-jerk">flowchart TB
+  D["Domain (D)&lt;br/&gt;Distancia al &lt;br/&gt;estado de referencia"] --&gt; V["Velocidad (dD/dt)&lt;br/&gt;Dirección y ritmo del cambio"]
+  V --&gt; A["Aceleración (d2D/dt2)&lt;br/&gt;Cambio en el ritmo"]
+  A --&gt; J["Jerk (d3D/dt3)&lt;br/&gt;Cambio abrupto &lt;br/&gt;en la aceleración"]
+  J --&gt; I["J &gt; 0&lt;br/&gt;Intensificación"]
+  J --&gt; R["J &lt; 0&lt;br/&gt;Reversión"]
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-derivadas-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.1: Derivadas temporales usadas para interpretar cambios abruptos en la trayectoria ecosistémica.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>El signo entrega una primera lectura:</p>
+<div id="tbl-signo-jerk" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-signo-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12.1: Lectura básica del signo del jerk para selección de cuencas.
+</figcaption>
+<div aria-describedby="tbl-signo-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo de evento</th>
+<th>Condición</th>
+<th>Lectura preliminar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intensificación</td>
+<td><span class="math inline">J &gt; 0</span></td>
+<td>Aceleración brusca del cambio respecto del dominio de referencia. Puede sugerir presión, perturbación o deterioro emergente.</td>
+</tr>
+<tr class="even">
+<td>Reversión</td>
+<td><span class="math inline">J &lt; 0</span></td>
+<td>Frenada o inversión brusca de la trayectoria. Puede sugerir recuperación, estabilización, cambio de régimen o artefacto de datos.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Esta distinción es útil para terreno porque permite formular preguntas distintas. Una cuenca con intensificación puede requerir observar señales de presión reciente; una cuenca con reversión puede requerir revisar si existe recuperación visible, cambio hidrológico, variación de nieve, intervención local o inconsistencia en la serie satelital.</p>
+</section>
+<section id="sec-estructura-datos-jerk" class="level2 page-columns page-full" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="sec-estructura-datos-jerk"><span class="header-section-number">12.3</span> Insumos y base analítica</h2>
+<p>El flujo usa dos insumos principales:</p>
+<div id="tbl-insumos-jerk" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-insumos-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12.2: Insumos principales del análisis de cuencas prioritarias por jerk.
+</figcaption>
+<div aria-describedby="tbl-insumos-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Insumo</th>
+<th>Contenido</th>
+<th>Uso en el análisis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>MRCT_v1.xlsx</code></td>
+<td>Panel MRCT completo RMS, con 4.693 registros, 361 cuencas y 13 años.</td>
+<td>Base temporal <code>RID x Year</code> para calcular eventos de jerk y cruzarlos con métricas MRCT.</td>
+</tr>
+<tr class="even">
+<td><code>MRCT_v1.gpkg</code></td>
+<td>Geometría de 361 cuencas de la Región Metropolitana de Santiago.</td>
+<td>Base espacial para centroides, distancias, macrozonas, buffers y mapas.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>El panel completo cubre 2013-2025. Los primeros años no tienen jerk válido por definición, porque el cálculo necesita años previos para estimar la tercera derivada discreta. El análisis conserva la serie completa para control de calidad y lectura temporal, y luego usa eventos extremos y filtros espaciales para priorizar validación territorial.</p>
+<p>La geometría fue transformada al sistema EPSG:32719, que permite trabajar en coordenadas métricas para calcular distancias aproximadas desde Santiago centro y desde cada punto estratégico.</p>
+<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-flujo-base-jerk" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-flujo-base-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-flujo-base-jerk">flowchart TB
+  config["Configuración&lt;br/&gt;rutas, coordenadas&lt;br/&gt;y parámetros"] --&gt; data["Datos&lt;br/&gt;MRCT y cuencas RMS"]
+  data --&gt; parquet["Parquet&lt;br/&gt;lectura rápida"]
+  parquet --&gt; duck["DuckDB&lt;br/&gt;base analítica local"]
+  duck --&gt; qc["Control de calidad&lt;br/&gt;cobertura y clases"]
+  qc --&gt; events["Eventos de jerk&lt;br/&gt;percentiles anual y global"]
+  events --&gt; buffer["Buffer SCL&lt;br/&gt;radio adaptativo"]
+  buffer --&gt; score["P_score&lt;br/&gt;puntaje compuesto"]
+  score --&gt; top10["10 cuencas&lt;br/&gt;prioritarias"]
+  top10 --&gt; points["Puntos RMS&lt;br/&gt;buffers de 25 km"]
+  points --&gt; export["Exportación&lt;br/&gt;Excel, SHP y DuckDB"]
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-flujo-base-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.2: Flujo lineal de construcción de la base analítica y productos de priorización.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>La base DuckDB queda organizada en seis tablas:</p>
+<div id="tbl-esquema-duckdb-jerk" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-esquema-duckdb-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12.3: Esquema de tablas creado para sostener consultas posteriores.
+</figcaption>
+<div aria-describedby="tbl-esquema-duckdb-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tabla</th>
+<th>Contenido</th>
+<th>Uso posterior</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>mrct_panel</code></td>
+<td>Panel MRCT completo.</td>
+<td>Consultar trayectorias, resiliencia, dominio, velocidad, aceleración y jerk.</td>
+</tr>
+<tr class="even">
+<td><code>basins</code></td>
+<td>Atributos y geometría resumida de cuencas.</td>
+<td>Construir mapas, cruces espaciales y visualizaciones.</td>
+</tr>
+<tr class="odd">
+<td><code>accessibility</code></td>
+<td>Centroide, distancia a Santiago centro, macrozona, anillo y pertenencia al núcleo cercano.</td>
+<td>Filtrar cuencas por factibilidad preliminar.</td>
+</tr>
+<tr class="even">
+<td><code>jerk_events</code></td>
+<td>Eventos con jerk no nulo, percentiles, signo y clase.</td>
+<td>Identificar eventos extremos por año, macrozona o tipo de evento.</td>
+</tr>
+<tr class="odd">
+<td><code>field_priority</code></td>
+<td>Ranking final de las diez cuencas seleccionadas dentro del buffer.</td>
+<td>Alimentar reportes, fichas de terreno y mapas.</td>
+</tr>
+<tr class="even">
+<td><code>punto_results</code></td>
+<td>Cuencas calificadas por punto estratégico RMS.</td>
+<td>Revisar señales ecosistémicas cerca de Santiago centro, Tiltil y San José de Maipo.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="sec-control-calidad-jerk" class="level2 page-columns page-full" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="sec-control-calidad-jerk"><span class="header-section-number">12.4</span> Control de calidad y cobertura</h2>
+<p>Antes de priorizar cuencas se revisó la disponibilidad anual de jerk. La tabla distingue el total regional de cuencas, las cuencas con jerk válido y el porcentaje de cobertura.</p>
+<div id="tbl-disponibilidad-jerk" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-disponibilidad-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12.4: Disponibilidad regional de jerk en la serie MRCT 2013-2025.
+</figcaption>
+<div aria-describedby="tbl-disponibilidad-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Año</th>
+<th style="text-align: right;">Cuencas totales</th>
+<th style="text-align: right;">Cuencas con jerk</th>
+<th style="text-align: right;">Cobertura</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">2013</td>
+<td style="text-align: right;">361</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0,0%</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2014</td>
+<td style="text-align: right;">361</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0,0%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2015</td>
+<td style="text-align: right;">361</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0,0%</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2016</td>
+<td style="text-align: right;">361</td>
+<td style="text-align: right;">113</td>
+<td style="text-align: right;">31,3%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2017</td>
+<td style="text-align: right;">361</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">30,5%</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2018</td>
+<td style="text-align: right;">361</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">30,5%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">361</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">28,3%</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">361</td>
+<td style="text-align: right;">99</td>
+<td style="text-align: right;">27,4%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2021</td>
+<td style="text-align: right;">361</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: right;">28,3%</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2022</td>
+<td style="text-align: right;">361</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">26,0%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2023</td>
+<td style="text-align: right;">361</td>
+<td style="text-align: right;">98</td>
+<td style="text-align: right;">27,1%</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2024</td>
+<td style="text-align: right;">361</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">28,8%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2025</td>
+<td style="text-align: right;">361</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: right;">28,8%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>La baja cobertura relativa obliga a usar percentiles con cautela. La ausencia de jerk válido en una cuenca no implica estabilidad ecosistémica; puede reflejar falta de datos suficientes, calidad de observación, restricciones de cálculo o problemas de disponibilidad en los insumos anuales.</p>
+<div id="fig-disponibilidad-jerk" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-disponibilidad-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/trabajo_terreno_rms/MRCT_Cuencas_Prioritarias_Jerk_12_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-disponibilidad-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.3: Disponibilidad anual de jerk en la Región Metropolitana de Santiago.
+</figcaption>
+</figure>
+</div>
+<p>La distribución completa de clases en el panel es:</p>
+<div id="tbl-clases-jerk" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-clases-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12.5: Distribución de clases de jerk en el panel MRCT RMS.
+</figcaption>
+<div aria-describedby="tbl-clases-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Clase de jerk</th>
+<th style="text-align: right;">Eventos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Neutro</td>
+<td style="text-align: right;">3.893</td>
+</tr>
+<tr class="even">
+<td>Reversión leve</td>
+<td style="text-align: right;">227</td>
+</tr>
+<tr class="odd">
+<td>Intensificación leve</td>
+<td style="text-align: right;">222</td>
+</tr>
+<tr class="even">
+<td>Reversión fuerte</td>
+<td style="text-align: right;">179</td>
+</tr>
+<tr class="odd">
+<td>Intensificación fuerte</td>
+<td style="text-align: right;">172</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="sec-eventos-jerk" class="level2 page-columns page-full" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="sec-eventos-jerk"><span class="header-section-number">12.5</span> Eventos extremos de jerk</h2>
+<p>El análisis materializó <strong>1.036 eventos</strong> con jerk no nulo en <strong>130 cuencas</strong>. Para cada evento se calcularon dos percentiles:</p>
+<ul>
+<li>percentil anual, que compara una cuenca con otras cuencas del mismo año;</li>
+<li>percentil global, que compara el evento con todos los eventos de la serie.</li>
+</ul>
+<p>El percentil anual es el criterio principal de selección porque permite interpretar cada evento dentro de su contexto temporal. Un evento en p90 anual es relevante aunque el año completo haya sido menos activo que otros.</p>
+<div id="tbl-top-eventos-jerk" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-top-eventos-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12.6: Diez eventos regionales de mayor magnitud absoluta de jerk.
+</figcaption>
+<div aria-describedby="tbl-top-eventos-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">RID</th>
+<th style="text-align: right;">Año</th>
+<th style="text-align: right;">Jerk</th>
+<th>Tipo</th>
+<th style="text-align: right;">Percentil anual</th>
+<th style="text-align: right;"><code>RES</code></th>
+<th>Macrozona MRCT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">2021</td>
+<td style="text-align: right;">2,5275</td>
+<td>Intensificación</td>
+<td style="text-align: right;">100,0</td>
+<td style="text-align: right;">0,00734</td>
+<td>Nororiente</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">2025</td>
+<td style="text-align: right;">-2,4422</td>
+<td>Reversión</td>
+<td style="text-align: right;">100,0</td>
+<td style="text-align: right;">0,01989</td>
+<td>Nororiente</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">115</td>
+<td style="text-align: right;">2018</td>
+<td style="text-align: right;">-2,2577</td>
+<td>Reversión</td>
+<td style="text-align: right;">100,0</td>
+<td style="text-align: right;">0,07863</td>
+<td>Nororiente</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">2025</td>
+<td style="text-align: right;">-2,2242</td>
+<td>Reversión</td>
+<td style="text-align: right;">99,0</td>
+<td style="text-align: right;">0,15015</td>
+<td>Nororiente</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">64</td>
+<td style="text-align: right;">2025</td>
+<td style="text-align: right;">-2,2111</td>
+<td>Reversión</td>
+<td style="text-align: right;">98,1</td>
+<td style="text-align: right;">0,08211</td>
+<td>Nororiente</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">2024</td>
+<td style="text-align: right;">2,0964</td>
+<td>Intensificación</td>
+<td style="text-align: right;">100,0</td>
+<td style="text-align: right;">0,00144</td>
+<td>Nororiente</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">64</td>
+<td style="text-align: right;">2018</td>
+<td style="text-align: right;">-2,0824</td>
+<td>Reversión</td>
+<td style="text-align: right;">99,1</td>
+<td style="text-align: right;">0,17379</td>
+<td>Nororiente</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">2025</td>
+<td style="text-align: right;">-2,0356</td>
+<td>Reversión</td>
+<td style="text-align: right;">97,1</td>
+<td style="text-align: right;">0,01735</td>
+<td>Nororiente</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">115</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">1,9488</td>
+<td>Intensificación</td>
+<td style="text-align: right;">100,0</td>
+<td style="text-align: right;">0,20284</td>
+<td>Nororiente</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">273</td>
+<td style="text-align: right;">2016</td>
+<td style="text-align: right;">-1,9341</td>
+<td>Reversión</td>
+<td style="text-align: right;">100,0</td>
+<td style="text-align: right;">0,02365</td>
+<td>Surponiente</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="fig-distribucion-jerk-anual" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-distribucion-jerk-anual-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/trabajo_terreno_rms/MRCT_Cuencas_Prioritarias_Jerk_11_1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-distribucion-jerk-anual-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.4: Distribución anual del jerk en la serie MRCT RMS.
+</figcaption>
+</figure>
+</div>
+<div id="fig-eventos-regionales-jerk" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-eventos-regionales-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/trabajo_terreno_rms/MRCT_Cuencas_Prioritarias_Jerk_11_2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-eventos-regionales-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.5: Eventos regionales de jerk iguales o superiores al percentil 95. El mapa entrega contexto espacial antes de filtrar por el entorno operacional de Santiago centro.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-cruce-territorial-jerk" class="level2 page-columns page-full" data-number="12.6">
+<h2 data-number="12.6" class="anchored" data-anchor-id="sec-cruce-territorial-jerk"><span class="header-section-number">12.6</span> Buffer operacional de Santiago centro</h2>
+<p>La nueva versión del análisis usa un criterio único: <strong>top 10 por <code>P_score</code> dentro del área operacional de Santiago centro</strong>.</p>
+<p>Una cuenca entra al conjunto candidato si cumple al menos una de estas condiciones:</p>
+<ul>
+<li>está dentro del núcleo cercano al centro metropolitano (<code>dist_scl_km &lt;= 25</code>);</li>
+<li>su centroide está dentro del radio operativo adaptativo desde Santiago centro.</li>
+</ul>
+<p>El notebook explora combinaciones de radio y percentil anual. La combinación escogida fue <strong>50 km</strong> y <strong>jerk igual o superior al p90 anual</strong>, porque es el radio más pequeño evaluado que garantiza más de diez cuencas calificadas con el umbral más exigente posible.</p>
+<div id="tbl-parametros-buffer-jerk" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-parametros-buffer-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12.7: Exploración de parámetros para el buffer operativo de Santiago centro.
+</figcaption>
+<div aria-describedby="tbl-parametros-buffer-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Radio</th>
+<th style="text-align: right;">Umbral anual</th>
+<th style="text-align: right;">Cuencas calificadas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">25 km</td>
+<td style="text-align: right;">p90</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">25 km</td>
+<td style="text-align: right;">p75</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">50 km</td>
+<td style="text-align: right;">p90</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">75 km</td>
+<td style="text-align: right;">p90</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">100 km</td>
+<td style="text-align: right;">p90</td>
+<td style="text-align: right;">36</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div class="cell page-columns page-full" data-layout-align="center">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-ajuste-buffer-jerk" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-ajuste-buffer-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div>
+<pre class="mermaid mermaid-js" data-label="fig-ajuste-buffer-jerk">flowchart TB
+  start["Parámetros iniciales&lt;br/&gt;radios 25, 50, 75, 100 km&lt;br/&gt;umbrales p90, p85, p80, p75"] --&gt; count["Contar cuencas calificadas"]
+  count --&gt; decision{"Hay al menos&lt;br/&gt;10 candidatas?"}
+  decision -- "Si" --&gt; choose["Elegir radio menor&lt;br/&gt;con umbral mas exigente"]
+  decision -- "No" --&gt; relax["Ampliar radio o relajar umbral"]
+  relax --&gt; count
+  choose --&gt; result["Resultado usado&lt;br/&gt;50 km + p90 anual&lt;br/&gt;12 cuencas"]
+</pre>
+</div>
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-ajuste-buffer-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.6: Lógica de diagnóstico del buffer operativo y ajuste de parámetros.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div id="fig-buffer-jerk" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-buffer-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/trabajo_terreno_rms/MRCT_Cuencas_Prioritarias_Jerk_14_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-buffer-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.7: Cuencas calificadas dentro del entorno operacional de Santiago centro. La visualización se concentra en el área de análisis y no en toda la región.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-puntaje-jerk" class="level2 page-columns page-full" data-number="12.7">
+<h2 data-number="12.7" class="anchored" data-anchor-id="sec-puntaje-jerk"><span class="header-section-number">12.7</span> Puntaje de priorización</h2>
+<p>Para pasar desde eventos individuales a cuencas candidatas se construyó un puntaje compuesto, denominado <code>P_score</code>. En esta versión, el puntaje se calcula <strong>exclusivamente sobre las 12 cuencas calificadas del buffer</strong>, no sobre todo el conjunto regional.</p>
+<p><span class="math display">P = 0,35 \cdot J^* + 0,20 \cdot R^* + 0,15 \cdot E^* + 0,15 \cdot L^* + 0,15 \cdot A^*</span></p>
+<div id="tbl-pesos-prioridad-jerk" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-pesos-prioridad-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12.8: Componentes del puntaje compuesto de prioridad.
+</figcaption>
+<div aria-describedby="tbl-pesos-prioridad-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 30%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Componente</th>
+<th>Variable base</th>
+<th style="text-align: right;">Peso</th>
+<th>Qué representa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">J^*</span></td>
+<td><code>jerk_pct_global</code></td>
+<td style="text-align: right;">0,35</td>
+<td>Magnitud relativa del evento abrupto.</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">R^*</span></td>
+<td><code>PT</code></td>
+<td style="text-align: right;">0,20</td>
+<td>Potencial de transición o vulnerabilidad ecosistémica.</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">E^*</span></td>
+<td><code>Domain_local</code></td>
+<td style="text-align: right;">0,15</td>
+<td>Diferencia de la cuenca respecto de su entorno local.</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">L^*</span></td>
+<td><code>SENS</code></td>
+<td style="text-align: right;">0,15</td>
+<td>Sensibilidad climática o exposición a forzantes.</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">A^*</span></td>
+<td><code>1 - dist_scl_km</code></td>
+<td style="text-align: right;">0,15</td>
+<td>Accesibilidad relativa dentro del conjunto candidato.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Los componentes se normalizan por rango percentil dentro del buffer. Esto evita que valores extremos dominen la escala y hace que las dimensiones sean comparables. El rango observado de <code>P_score</code> fue de <strong>0,300 a 0,746</strong>.</p>
+<div id="fig-pscore-buffer-jerk" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-pscore-buffer-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/trabajo_terreno_rms/MRCT_Cuencas_Prioritarias_Jerk_17_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-pscore-buffer-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.8: Distribución espacial del <code>P_score</code> dentro del buffer operativo de Santiago centro.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-diez-cuencas-jerk" class="level2 page-columns page-full" data-number="12.8">
+<h2 data-number="12.8" class="anchored" data-anchor-id="sec-diez-cuencas-jerk"><span class="header-section-number">12.8</span> Diez cuencas candidatas</h2>
+<p>La tabla siguiente presenta las diez cuencas priorizadas por el flujo actualizado. Todas fueron seleccionadas por <code>P_score</code> dentro del conjunto candidato del buffer de Santiago centro.</p>
+<div id="tbl-diez-cuencas-prioritarias" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-diez-cuencas-prioritarias-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12.9: Diez cuencas candidatas para validación territorial según el flujo actualizado.
+</figcaption>
+<div aria-describedby="tbl-diez-cuencas-prioritarias-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 7%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 7%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 7%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Prioridad</th>
+<th style="text-align: right;">RID</th>
+<th>Macrozona MRCT</th>
+<th style="text-align: right;">Año crítico</th>
+<th style="text-align: right;">Jerk</th>
+<th style="text-align: right;">Percentil anual</th>
+<th>Tipo de evento</th>
+<th style="text-align: right;"><code>RES</code></th>
+<th style="text-align: right;">Distancia a SCL (km)</th>
+<th>Anillo</th>
+<th style="text-align: right;"><code>P_score</code></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">31</td>
+<td>Nororiente</td>
+<td style="text-align: right;">2024</td>
+<td style="text-align: right;">2,0964</td>
+<td style="text-align: right;">100,0</td>
+<td>Intensificación</td>
+<td style="text-align: right;">0,00144</td>
+<td style="text-align: right;">42,5</td>
+<td>Intermedio</td>
+<td style="text-align: right;">0,7458</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">66</td>
+<td>Nororiente</td>
+<td style="text-align: right;">2025</td>
+<td style="text-align: right;">-1,5283</td>
+<td style="text-align: right;">95,2</td>
+<td>Reversión</td>
+<td style="text-align: right;">0,00730</td>
+<td style="text-align: right;">38,4</td>
+<td>Intermedio</td>
+<td style="text-align: right;">0,7292</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">22</td>
+<td>Nororiente</td>
+<td style="text-align: right;">2021</td>
+<td style="text-align: right;">2,5275</td>
+<td style="text-align: right;">100,0</td>
+<td>Intensificación</td>
+<td style="text-align: right;">0,00734</td>
+<td style="text-align: right;">35,8</td>
+<td>Intermedio</td>
+<td style="text-align: right;">0,7250</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">194</td>
+<td>Suroriente</td>
+<td style="text-align: right;">2017</td>
+<td style="text-align: right;">0,8781</td>
+<td style="text-align: right;">95,5</td>
+<td>Intensificación</td>
+<td style="text-align: right;">0,00175</td>
+<td style="text-align: right;">26,6</td>
+<td>Intermedio</td>
+<td style="text-align: right;">0,6000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">97</td>
+<td>Nororiente</td>
+<td style="text-align: right;">2025</td>
+<td style="text-align: right;">-1,7825</td>
+<td style="text-align: right;">96,2</td>
+<td>Reversión</td>
+<td style="text-align: right;">0,02205</td>
+<td style="text-align: right;">39,9</td>
+<td>Intermedio</td>
+<td style="text-align: right;">0,5958</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">117</td>
+<td>Nororiente</td>
+<td style="text-align: right;">2018</td>
+<td style="text-align: right;">-1,3085</td>
+<td style="text-align: right;">94,5</td>
+<td>Reversión</td>
+<td style="text-align: right;">0,03430</td>
+<td style="text-align: right;">43,3</td>
+<td>Intermedio</td>
+<td style="text-align: right;">0,5292</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">19</td>
+<td>Norponiente</td>
+<td style="text-align: right;">2017</td>
+<td style="text-align: right;">0,9399</td>
+<td style="text-align: right;">96,4</td>
+<td>Intensificación</td>
+<td style="text-align: right;">0,01319</td>
+<td style="text-align: right;">47,6</td>
+<td>Intermedio</td>
+<td style="text-align: right;">0,4667</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">114</td>
+<td>Norponiente</td>
+<td style="text-align: right;">2017</td>
+<td style="text-align: right;">0,8508</td>
+<td style="text-align: right;">95,5</td>
+<td>Intensificación</td>
+<td style="text-align: right;">0,04513</td>
+<td style="text-align: right;">12,6</td>
+<td>Cercano</td>
+<td style="text-align: right;">0,4417</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">133</td>
+<td>Nororiente</td>
+<td style="text-align: right;">2024</td>
+<td style="text-align: right;">1,2571</td>
+<td style="text-align: right;">97,1</td>
+<td>Intensificación</td>
+<td style="text-align: right;">0,08190</td>
+<td style="text-align: right;">44,8</td>
+<td>Intermedio</td>
+<td style="text-align: right;">0,4083</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">188</td>
+<td>Suroriente</td>
+<td style="text-align: right;">2016</td>
+<td style="text-align: right;">-0,7487</td>
+<td style="text-align: right;">91,2</td>
+<td>Reversión</td>
+<td style="text-align: right;">0,05473</td>
+<td style="text-align: right;">25,5</td>
+<td>Intermedio</td>
+<td style="text-align: right;">0,4083</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>La selección muestra una mezcla de intensificaciones y reversiones fuertes, con predominio de cuencas de resiliencia muy baja o <code>Colapso_Potencial</code>. La señal se concentra especialmente en Nororiente, pero incluye cuencas Suroriente y Norponiente. La única cuenca del top 10 en anillo cercano es RID 114; el resto pertenece al anillo intermedio, por lo que la planificación logística debe revisar acceso real y tiempo de traslado.</p>
+<div id="fig-top10-jerk" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-top10-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/trabajo_terreno_rms/MRCT_Cuencas_Prioritarias_Jerk_20_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-top10-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.9: Diez cuencas prioritarias dentro del entorno operacional de Santiago centro, numeradas según <code>P_score</code>.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-series-temporales-jerk" class="level2 page-columns page-full" data-number="12.9">
+<h2 data-number="12.9" class="anchored" data-anchor-id="sec-series-temporales-jerk"><span class="header-section-number">12.9</span> Lectura de series temporales</h2>
+<p>Para las tres cuencas de mayor puntaje se revisaron series temporales completas 2013-2025 de <code>Domain</code>, <code>Velocidad</code>, <code>Aceleracion</code>, <code>Jerk</code> y <code>RES</code>. Esta lectura es necesaria porque un ranking por jerk puede seleccionar picos aislados. La serie permite distinguir si el evento abrupto aparece como una ruptura puntual, una intensificación dentro de una tendencia o una reversión después de varios años de alejamiento del dominio.</p>
+<div id="fig-series-top3-jerk" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-series-top3-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/trabajo_terreno_rms/MRCT_Cuencas_Prioritarias_Jerk_21_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-series-top3-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.10: Series temporales de las tres cuencas con mayor <code>P_score</code>. La línea vertical roja indica el año crítico de jerk.
+</figcaption>
+</figure>
+</div>
+<p>Esta lectura debe repetirse para cualquier cuenca que pase a planificación de terreno. Una cuenca no debería visitarse solo porque aparece en el top 10; debería visitarse porque su serie temporal formula una pregunta territorial clara.</p>
+</section>
+<section id="sec-puntos-estrategicos-rms" class="level2 page-columns page-full" data-number="12.10">
+<h2 data-number="12.10" class="anchored" data-anchor-id="sec-puntos-estrategicos-rms"><span class="header-section-number">12.10</span> Puntos estratégicos RMS</h2>
+<p>La nueva versión del notebook agrega una lectura específica para tres puntos de referencia territorial de la Región Metropolitana. La lógica es preventiva: las cuencas cercanas a puntos relevantes que ya muestran jerk elevado constituyen zonas donde conviene levantar una línea base territorial más cuidadosa.</p>
+<div id="tbl-puntos-estrategicos-rms" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-puntos-estrategicos-rms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12.10: Puntos estratégicos incorporados al análisis RMS.
+</figcaption>
+<div aria-describedby="tbl-puntos-estrategicos-rms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 28%">
+<col style="width: 28%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Punto</th>
+<th style="text-align: right;">Latitud</th>
+<th style="text-align: right;">Longitud</th>
+<th>Rol analítico</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Santiago centro</td>
+<td style="text-align: right;">-33,4489</td>
+<td style="text-align: right;">-70,6693</td>
+<td>Núcleo urbano y administrativo.</td>
+</tr>
+<tr class="even">
+<td>Tiltil</td>
+<td style="text-align: right;">-33,0850</td>
+<td style="text-align: right;">-70,9270</td>
+<td>Borde norte con presión logística e industrial.</td>
+</tr>
+<tr class="odd">
+<td>San José de Maipo</td>
+<td style="text-align: right;">-33,6400</td>
+<td style="text-align: right;">-70,3520</td>
+<td>Cabecera cordillerana y sensibilidad hídrica.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Para cada punto se construyó un buffer de <strong>25 km</strong>. Dentro de ese radio se seleccionaron cuencas con jerk igual o superior al <strong>p85 anual</strong> y se ordenaron por <code>P_score</code> cuando estaba disponible.</p>
+<div id="tbl-resumen-puntos-rms" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-resumen-puntos-rms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12.11: Resumen de cuencas calificadas por punto estratégico RMS.
+</figcaption>
+<div aria-describedby="tbl-resumen-puntos-rms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Punto</th>
+<th style="text-align: right;">Cuencas en buffer</th>
+<th style="text-align: right;">Cuencas con jerk &gt;= p85</th>
+<th style="text-align: right;">RID superior</th>
+<th style="text-align: right;">Jerk del RID superior</th>
+<th style="text-align: right;"><code>RES</code></th>
+<th>Clase</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Santiago centro</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: right;">0,8508</td>
+<td style="text-align: right;">0,04513</td>
+<td>Intensificación fuerte</td>
+</tr>
+<tr class="even">
+<td>Tiltil</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">2,5275</td>
+<td style="text-align: right;">0,00734</td>
+<td>Intensificación fuerte</td>
+</tr>
+<tr class="odd">
+<td>San José de Maipo</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">117</td>
+<td style="text-align: right;">-1,3085</td>
+<td style="text-align: right;">0,03430</td>
+<td>Reversión fuerte</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="tbl-top-puntos-rms" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-top-puntos-rms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12.12: Primeras cuencas calificadas por punto estratégico RMS.
+</figcaption>
+<div aria-describedby="tbl-top-puntos-rms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 9%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 9%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Punto</th>
+<th style="text-align: right;">Ranking</th>
+<th style="text-align: right;">RID</th>
+<th>Macrozona MRCT</th>
+<th style="text-align: right;">Año crítico</th>
+<th style="text-align: right;">Jerk</th>
+<th>Tipo</th>
+<th style="text-align: right;">Distancia al punto (km)</th>
+<th style="text-align: right;"><code>P_score</code></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Santiago centro</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">114</td>
+<td>Norponiente</td>
+<td style="text-align: right;">2017</td>
+<td style="text-align: right;">0,8508</td>
+<td>Intensificación</td>
+<td style="text-align: right;">12,6</td>
+<td style="text-align: right;">0,4417</td>
+</tr>
+<tr class="even">
+<td>Tiltil</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">22</td>
+<td>Nororiente</td>
+<td style="text-align: right;">2021</td>
+<td style="text-align: right;">2,5275</td>
+<td>Intensificación</td>
+<td style="text-align: right;">19,0</td>
+<td style="text-align: right;">0,7250</td>
+</tr>
+<tr class="odd">
+<td>Tiltil</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">19</td>
+<td>Norponiente</td>
+<td style="text-align: right;">2017</td>
+<td style="text-align: right;">0,9399</td>
+<td>Intensificación</td>
+<td style="text-align: right;">13,6</td>
+<td style="text-align: right;">0,4667</td>
+</tr>
+<tr class="even">
+<td>Tiltil</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">17</td>
+<td>Nororiente</td>
+<td style="text-align: right;">2017</td>
+<td style="text-align: right;">0,6526</td>
+<td>Intensificación</td>
+<td style="text-align: right;">15,9</td>
+<td style="text-align: right;">0,3000</td>
+</tr>
+<tr class="odd">
+<td>San José de Maipo</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">117</td>
+<td>Nororiente</td>
+<td style="text-align: right;">2018</td>
+<td style="text-align: right;">-1,3085</td>
+<td>Reversión</td>
+<td style="text-align: right;">23,3</td>
+<td style="text-align: right;">0,5292</td>
+</tr>
+<tr class="even">
+<td>San José de Maipo</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">133</td>
+<td>Nororiente</td>
+<td style="text-align: right;">2024</td>
+<td style="text-align: right;">1,2571</td>
+<td>Intensificación</td>
+<td style="text-align: right;">15,7</td>
+<td style="text-align: right;">0,4083</td>
+</tr>
+<tr class="odd">
+<td>San José de Maipo</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">242</td>
+<td>Suroriente</td>
+<td style="text-align: right;">2024</td>
+<td style="text-align: right;">1,3628</td>
+<td>Intensificación</td>
+<td style="text-align: right;">19,5</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td>San José de Maipo</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">210</td>
+<td>Suroriente</td>
+<td style="text-align: right;">2025</td>
+<td style="text-align: right;">-1,1949</td>
+<td>Reversión</td>
+<td style="text-align: right;">21,6</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td>San José de Maipo</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">256</td>
+<td>Suroriente</td>
+<td style="text-align: right;">2016</td>
+<td style="text-align: right;">0,8267</td>
+<td>Intensificación</td>
+<td style="text-align: right;">23,6</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td>San José de Maipo</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">164</td>
+<td>Nororiente</td>
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">0,7510</td>
+<td>Intensificación</td>
+<td style="text-align: right;">23,1</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td>San José de Maipo</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">185</td>
+<td>Suroriente</td>
+<td style="text-align: right;">2016</td>
+<td style="text-align: right;">0,5189</td>
+<td>Intensificación</td>
+<td style="text-align: right;">12,3</td>
+<td style="text-align: right;">NA</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="fig-puntos-estrategicos-rms" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-puntos-estrategicos-rms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/trabajo_terreno_rms/MRCT_Cuencas_Prioritarias_Jerk_25_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-puntos-estrategicos-rms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12.11: Cuencas con jerk elevado en buffers de 25 km alrededor de puntos estratégicos RMS.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-uso-terreno-jerk" class="level2" data-number="12.11">
+<h2 data-number="12.11" class="anchored" data-anchor-id="sec-uso-terreno-jerk"><span class="header-section-number">12.11</span> Uso en planificación territorial</h2>
+<p>La selección por jerk debe alimentar una reunión técnica y territorial antes de definir rutas. En esa revisión se recomienda trabajar con cuatro listas:</p>
+<ul>
+<li><strong>lista prioritaria</strong>, con las diez cuencas del ranking del buffer de Santiago centro;</li>
+<li><strong>lista logística</strong>, con cuencas cercanas o visitables dentro del mismo recorrido;</li>
+<li><strong>lista estratégica RMS</strong>, con cuencas próximas a Santiago centro, Tiltil y San José de Maipo;</li>
+<li><strong>lista de reemplazo</strong>, con cuencas alternativas por si falla el acceso, el clima o el permiso.</li>
+</ul>
+<p>La reunión debe revisar caminos, huellas, portones, predios, restricciones de propiedad, áreas protegidas, infraestructura, posibilidad de vuelo de dron, puntos seguros de medición, pertinencia territorial y antecedentes locales de incendios, inundaciones, sequías, obras, extracción, urbanización, remoción en masa o nieve persistente.</p>
+<p>El producto esperado no es reemplazar el ranking, sino convertirlo en un plan de campaña realista: qué cuencas se visitan, cuáles quedan como respaldo, qué hipótesis se validan y qué observaciones se necesitan en cada sitio.</p>
+</section>
+<section id="sec-fichas-jerk" class="level2" data-number="12.12">
+<h2 data-number="12.12" class="anchored" data-anchor-id="sec-fichas-jerk"><span class="header-section-number">12.12</span> Fichas de terreno derivadas</h2>
+<p>Cada cuenca que avance a terreno debe transformarse en una ficha operativa. La base generada por este análisis permite precargar <code>RID</code>, macrozona MRCT, año crítico, tipo de evento, Jerk, <code>RES</code>, coordenadas, distancia a Santiago centro y contexto de punto estratégico cuando corresponda.</p>
+<p>La estructura única de registro se define en <a href="fichas_cuencas.html#sec-ficha-tipo-cuenca" class="quarto-xref"><span>Section 15.2</span></a>. Este capítulo aporta la señal analítica; la ficha convierte esa señal en observaciones de terreno comparables mediante el protocolo IEO descrito en <a href="protocolo_levantamiento.html#sec-ieo-terreno" class="quarto-xref"><span>Section 14.2</span></a>. Así se evita que el equipo reciba sólo coordenadas y se asegura que cada visita tenga una pregunta de validación explícita.</p>
+</section>
+<section id="sec-productos-jerk" class="level2" data-number="12.13">
+<h2 data-number="12.13" class="anchored" data-anchor-id="sec-productos-jerk"><span class="header-section-number">12.13</span> Productos exportados</h2>
+<p>La nueva versión del flujo exporta productos tabulares, espaciales y consultables:</p>
+<div id="tbl-productos-jerk" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-productos-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;12.13: Productos exportados por el notebook actualizado.
+</figcaption>
+<div aria-describedby="tbl-productos-jerk-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Producto</th>
+<th>Formato</th>
+<th>Contenido</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>cuencas_prioritarias_jerk_10_rms.xlsx</code></td>
+<td>Excel</td>
+<td>Hojas <code>Buffer_top10</code>, <code>Puntos_RMS</code> y <code>Eventos_reg_p95</code>.</td>
+</tr>
+<tr class="even">
+<td><code>cuencas_prioritarias_top10_rms.shp</code></td>
+<td>Shapefile</td>
+<td>Geometría de las diez cuencas prioritarias.</td>
+</tr>
+<tr class="odd">
+<td><code>cuencas_puntos_estrategicos_rms.shp</code></td>
+<td>Shapefile</td>
+<td>Geometría de cuencas calificadas por punto estratégico.</td>
+</tr>
+<tr class="even">
+<td><code>mrct_jerk_analysis_rms.db</code></td>
+<td>DuckDB</td>
+<td>Tablas analíticas para consulta posterior.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="sec-limitaciones-jerk" class="level2" data-number="12.14">
+<h2 data-number="12.14" class="anchored" data-anchor-id="sec-limitaciones-jerk"><span class="header-section-number">12.14</span> Limitaciones</h2>
+<p>El análisis tiene limitaciones que deben mantenerse visibles:</p>
+<ul>
+<li>el jerk detecta discontinuidades, no causas;</li>
+<li>un evento extremo puede deberse a cambio ecológico real, ruido, nube, nieve, mosaico débil, cambio de cobertura temporal o efecto metodológico;</li>
+<li>la distancia a Santiago centro y a puntos estratégicos se calculó como aproximación euclidiana, no como tiempo real de viaje;</li>
+<li>la agregación por macrozona MRCT no reemplaza comunas ni límites administrativos oficiales;</li>
+<li>el análisis de puntos estratégicos es una lectura espacial preliminar y no reemplaza evaluación ambiental, modelación hidrológica ni línea base de proyecto;</li>
+<li>la selección no incorpora todavía permisos, propiedad, estado de caminos, conocimiento local ni seguridad de vuelo;</li>
+<li>las coberturas anuales de jerk son incompletas, por lo que los percentiles deben interpretarse como señales de priorización y no como diagnóstico definitivo.</li>
+</ul>
+<p>Estas limitaciones no invalidan el análisis. Definen su uso correcto: una herramienta para orientar dónde mirar primero, qué preguntas llevar a terreno y dónde conviene anticipar una línea base más fina.</p>
+</section>
+<section id="sec-cierre-jerk" class="level2" data-number="12.15">
+<h2 data-number="12.15" class="anchored" data-anchor-id="sec-cierre-jerk"><span class="header-section-number">12.15</span> Cierre operativo</h2>
+<p>La selección actualizada convierte el panel MRCT RMS en una agenda preliminar de validación territorial. El procesamiento identificó eventos abruptos, construyó una base consultable, priorizó diez cuencas del entorno operativo de Santiago centro y agregó una lectura estratégica para Santiago centro, Tiltil y San José de Maipo.</p>
+<p>El siguiente paso no es salir directamente a esas diez cuencas ni asumir impacto por proximidad a un punto estratégico. El paso correcto es someter la lista a revisión aplicada: accesibilidad real, conversación con actores locales, evaluación de rutas, permisos, clima, seguridad, pertinencia territorial y contraste con antecedentes urbanos, productivos e hidrológicos. Con esa revisión, el ranking puede transformarse en un plan de terreno con sitios principales, sitios alternativos y preguntas de validación claras.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./trabajo_terreno.html" class="pagination-link" aria-label="Trabajo en Terreno">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Trabajo en Terreno</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./planificacion_terreno.html" class="pagination-link" aria-label="Planificación de Campaña">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Planificación de Campaña</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2026, <a href="https://cit.uai.cl/">Centro de Inteligencia Territorial</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
